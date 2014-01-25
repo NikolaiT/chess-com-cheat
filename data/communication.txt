@@ -1,0 +1,1541 @@
+[!] [31m Chess.com WebSocket client request detected [0m
+Function PR_Read() with PID 1934 contains 32768 bytes: 
+
+ipt src="http://cssjs.chesscomfiles.com/js/preloadjs/PreloadJS.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/soundjs/SoundJS.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/swfobject/swfobject.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/chess2/bundled/LiveChessCore.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/chess2/bundled/LiveChessBase.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/chess2/bundled/LiveChessAdvanced.v2013121801.js"></script>
+<script>
+//<![CDATA[
+dojo.addOnLoad(function(){ var cookies = document.cookie.split(";"); for (var i = 0; i < cookies.length; i++) { var c = cookies[i].split("=")[0]; if (c) c = c.replace(/^ /, ""); if (c != "PHPSESSID" && c != "tf_login_id" && c != "BAYEUX_BROWSER" && c.indexOf("com.chess") != 0) { dojo.cookie(c, "", {"domain": ".chess.com", "Max-Age": 0, "expires": 0}); dojo.cookie(c, "", {"Max-Age": 0, "expires": 0}); }};});
+//]]>
+</script>
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-1.newrelic.com","3265d1f467","430665","YVNQMhcAXEtZBRILWFgZcRMWFV1VFwoPFFJpQlcLFQ1TTF0=",0,76,new Date().getTime(),"","","","",""]);</script></body>
+</html>
+/p>
+    <input id="dialog_confirm_ok_button" type="button" class="button-submit" value="OK"/>
+    <input id="dialog_confirm_cancel_button" type="button" class="button-cancel" value="Abbrechen"/>
+  </div>
+</div>
+
+<div id="dialog_confirm_game_archive" class="dialogbox chess_com_hidden">
+  <div class="align-center">
+    <p id="dialog_confirm_game_txt">Diese Partie ist nicht mehr aktiv. M√∂chtest du die Partie gerne im Archiv ansehen?</p>
+    <input id="dialog_confirm_game_ok_button" type="button" class="button-submit" value="OK"/>
+    <input id="dialog_confirm_game_cancel_button" type="button" class="button-cancel" value="Abbrechen"/>
+  </div>
+</div>
+
+  <div id="dialog_addtochat" class="dialogbox chess_com_hidden">
+    <table class="dialogTable">
+      <tr>
+        <td class="alignRight">
+          <label for="dialog_addtochat_opponent_username_input" class="bold">Mitglied:</label>
+        </td>
+       <td class="alignLeft">
+        	<input id="dialog_addtochat_opponent_username_input" class="dialogSelect" type="text"/>
+        </td>
+      </tr>
+      <tr>
+        <td class="alignRight"><label for="dialog_addtochat_chat_rooms_select" class="bold">Chat-R√§ume:</label></td>
+       <td class="alignLeft">
+        <select id="dialog_addtochat_chat_rooms_select" class="dialogSelect" tabindex="1" size="1" name="chatrooms">
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_addtochat_add_button" value="Zum Chat hinzuf√ºgen" type="button" class="button medium orange dialogButton" />
+          <input id="dialog_addtochat_cancel_button" type="button" class="button medium grey dialogButton" value="Abbrechen" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dialog_newexamineboard" class="dialogbox chess_com_hidden">
+    <table class="dialogExamineTable">
+        <tr>
+           <td class="alignRight">
+            <label for="dialog_newexamineboard_name" class="bold">Titel:</label>
+           </td>
+          <td class="alignLeft">
+              <input id="dialog_newexamineboard_name" class="dialogExamineBoardInput" type="text" />
+           </td>
+        </tr>
+
+		<tr>
+           <td class="alignRight">
+            <label for="dialog_newexamineboard_whitename" class="bold">Wei√ü:</label>
+           </td>
+          <td class="alignLeft">
+              <input id="dialog_newexamineboard_whitename" class="dialogExamineBoardInput" type="text" />
+           </td>
+        </tr>
+
+		<tr>
+           <td class="alignRight">
+            <label for="dialog_newexamineboard_blackname" class="bold">Schwarz:</label>
+           </td>
+          <td class="alignLeft">
+              <input id="dialog_newexamineboard_blackname" class="dialogExamineBoardInput" type="text" />
+           </td>
+        </tr>
+
+        <tr>
+           <td class="alignRight">
+            <label for="dialog_newexamineboard_fen" class="bold">
+              Anfangsstellung (FEN):            </label>
+           </td>
+          <td class="alignLeft">
+              <input id="dialog_newexamineboard_fen" class="dialogExamineBoardInput" type="text" />
+           </td>
+        </tr>
+
+        <tr>
+           <td class="alignRight">
+            <label for="dialog_newexamineboard_public" class="bold">Zugriff:</label>
+           </td>
+          <td class="alignLeft">
+              <select id="dialog_newexamineboard_public" class="dialogSelect">
+                <option value="1">Alle Mitglieder</option>
+                <option value="0">Nur mit Einladung</option>
+              </select>
+           </td>
+        </tr>
+
+        <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_newexamineboard_start_button" value="Analysebrett starten" type="button" class="button-submit dialogButton" />
+          <input id="dialog_newexamineboard_cancel_button" type="button" class="button-cancel dialogButton" value="Abbrechen" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dialog_examineboard_options" class="dialogbox chess_com_hidden">
+    <input type="hidden" id="dialog_examineboard_options_gid" value="" />
+
+    <table class="dialogExamineTable">
+      <tr id="dialog_examineboard_options_presented_wrapper">
+        <td class="alignRight">
+          <input type="checkbox" class="checkbox" id="dialog_examineboard_options_presented" />
+        </td>
+       <td class="alignLeft">
+          <label for="dialog_examineboard_options_presented">√ñffentlich machen</label>
+        </td>
+      </tr>
+      <tr id="dialog_examineboard_options_premium_wrapper">
+        <td class="alignRight">
+          <input type="checkbox" class="checkbox" id="dialog_examineboard_options_premium" />
+        </td>
+       <td class="alignLeft">
+          <label for="dialog_examineboard_options_premium">Nur f√ºr Premiummitglieder</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="alignRight">
+          <input type="checkbox" class="checkbox" id="dialog_examineboard_options_mutestudents">
+        </td>
+       <td class="alignLeft">
+          <label for="dialog_examineboard_options_mutestudents">Chat von Sch√ºlern stummschalten</label><br />
+        </td>
+      </tr>
+      <tr>
+        <td class="alignRight">
+          <input type="checkbox" class="checkbox" id="dialog_examineboard_options_muteobservers">
+        </td>
+       <td class="alignLeft">
+          <label for="dialog_examineboard_options_muteobservers">Chat von Zuschauern stummschalten</label><br />
+        </td>
+      </tr>
+      <tr>
+        <td class="alignRight">
+          <input type="checkbox" class="checkbox" id="dialog_examineboard_options_mutebasic">
+        </td>
+       <td class="alignLeft">
+          <label for="dialog_examineboard_options_mutebasic">Chat von kostenlosen Mitgliedern stummschalten</label><br />
+        </td>
+      </tr>
+
+	  <tr>
+		<td class="alignRight">
+		 <label for="dialog_examineboard_options_ebtitle" class="bold">Titel:</label>
+		</td>
+		<td class="alignLeft">
+		   <input id="dialog_examineboard_options_ebtitle" class="dialogExamineBoardOptionsInput" type="text" />
+		</td>
+	 </tr>
+
+	  <tr>
+		<td class="alignRight">
+		 <label for="dialog_examineboard_options_whitename" class="bold">Wei√ü:</label>
+		</td>
+		<td class="alignLeft">
+		   <input id="dialog_examineboard_options_whitename" class="dialogExamineBoardOptionsInput" type="text" />
+		</td>
+	 </tr>
+
+	 <tr>
+		<td class="alignRight">
+		 <label for="dialog_examineboard_options_blackname" class="bold">Schwarz:</label>
+		</td>
+		<td class="alignLeft">
+		   <input id="dialog_examineboard_options_blackname" class="dialogExamineBoardOptionsInput" type="text" />
+		</td>
+	 </tr>
+
+      <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_examineboard_options_ok_button" value="OK" type="button" class="button-submit dialogButton" />
+          <input id="dialog_examineboard_options_close_button" value="Abbrechen" type="button" class="button-cancel dialogButton" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dialog_examineboard_fen" class="dialogbox chess_com_hidden">
+    <input type="hidden" id="dialog_examineboard_fen_gid" value="" />
+
+    <table class="dialogExamineTable">
+      <tr>
+        <td class="alignRight">
+		  <label for="dialog_examineboard_fen_fen" class="bold">
+		    Anfangsstellung (FEN):		  </label>
+        </td>
+       <td class="alignLeft">
+          <input id="dialog_examineboard_fen_fen" class="dialogExamineBoardInput" type="text" />
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_examineboard_fen_ok_button" value="OK" type="button" class="button-submit dialogButton" />
+          <input id="dialog_examineboard_fen_current_button" value="aktuelle Stellung als FEN holen" type="button" class="button-submit dialogButton" />
+          <input id="dialog_examineboard_fen_cancel_button" type="button" class="button-cancel dialogButton" value="Abbrechen" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dialog_examineboard_pgn" class="dialogbox chess_com_hidden">
+    <input type="hidden" id="dialog_examineboard_pgn_gid" value="" />
+
+    <table class="dialogExamineTable">
+      <tr>
+        <td class="alignRight">
+          <label for="dialog_examineboard_pgn_pgn" class="bold">PGN laden:</label>
+        </td>
+       <td class="alignLeft">
+          <textarea id="dialog_examineboard_pgn_pgn" class="dialogExamineBoardTextarea"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_examineboard_pgn_ok_button" value="OK" type="button" class="button-submit dialogButton" />
+          <input id="dialog_examineboard_pgn_current_button" value="aktuelle Stellung als PGN holen" type="button" class="button-submit dialogButton" />
+		  <input id="dialog_examineboard_pgn_game_button" value="Partie" type="button" class="button-submit dialogButton" />
+          <input id="dialog_examineboard_pgn_cancel_button" type="button" class="button-cancel dialogButton" value="Abbrechen" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="dialog_ebinvite" class="dialogbox chess_com_hidden">
+    <table class="dialogTable">
+      <tr>
+        <td class="alignRight">
+					<label for="dialog_ebinvite_username_input" class="bold">Mitglied:</label>
+        </td>
+       <td class="alignLeft">
+        	<input id="dialog_ebinvite_username_input" class="dialogSelect" type="text"/>
+        </td>
+      </tr>
+      <tr>
+        <td class="alignRight"><label for="dialog_ebinvite_boards_select" class="bold">Analysebretter:</label></td>
+       <td class="alignLeft">
+        	<select id="dialog_ebinvite_boards_select" class="dialogSelect" tabindex="1" size="1" name="ebboards">
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="alignCenter">
+          <input id="dialog_ebinvite_add_button" value="Einladen" type="button" class="button-submit dialogButton" />
+          <input id="dialog_ebinvite_cancel_button" type="button" class="button-cancel dialogButton" value="Abbrechen" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Tournament Dialogs -->
+  <div id="dialog_tournament_bye" class="dialogbox chess_com_hidden">
+	<div class="dialogTournamentByeMessage icn icntournament"><strong>Die Runde hat begonnen!</strong></div>
+
+	<div id="dialog_tournament_bye_message" class="dialogTournamentByeMessage">Du hast ein 1-Punkt-Freilos. Weil die Teilnehmerzahl ungerade ist, gibt es in dieser Runde f√ºr dich keinen Gegner. Du erh√§ltst einen vollen Punkt, genauso als wenn du diese Partie gewonnen h√§ttest. Warte zum Weiterspielen bitte auf die n√§chste Runde.</div>
+
+	<div class="dialogTournamentByeMessage"><strong><a href="#" id="dialog_tournament_bye_link">Klicke hier</a></strong>, um die Spitzenpartie dieser Runde zu verfolgen.</div>
+
+	<div class="dialogTournamentByeButtons">
+	  <input id="dialog_tournament_bye_ok_button" type="button" class="button medium grey" value="OK"/>
+	</div>
+  </div>
+
+  <div id="dialog_tournament_end" class="dialogbox chess_com_hidden">
+	<h2 class="dialogTournamentEndH2" id="dialog_tournament_end_name"></h2>
+
+	<div class="dialogTournamentEndWrapper">
+		<div id="dialog_tournament_end_1stWrapper" class="dialogTournamentEndRow">
+			<span class="dialogTournamentEndPos" id="dialog_tournament_end_1stPos"></span>
+			<img class="dialogTournamentEndImg" id="dialog_tournament_end_1stImg" src="" />
+			<span class="dialogTournamentEndUser" id="dialog_tournament_end_1stUser"></span>
+		</div>
+		<div id="dialog_tournament_end_2ndWrapper" class="dialogTournamentEndRow">
+			<span class="dialogTournamentEndPos" id="dialog_tournament_end_2ndPos"></span>
+			<img class="dialogTournamentEndImg" id="dialog_tournament_end_2ndImg" src="" />
+			<span class="dialogTournamentEndUser" id="dialog_tournament_end_2ndUser"></span>
+		</div>
+		<div id="dialog_tournament_end_3rdWrapper" class="dialogTournamentEndRow">
+			<span class="dialogTournamentEndPos" id="dialog_tournament_end_3rdPos"></span>
+			<img class="dialogTournamentEndImg" id="dialog_tournament_end_3rdImg" src="" />
+			<span class="dialogTournamentEndUser" id="dialog_tournament_end_3rdUser"></span>
+		</div>
+		<div id="dialog_tournament_end_selfWrapper" class="dialogTournamentEndRow dialogTournamentEndSelf chess_com_hidden">
+			<span class="dialogTournamentEndPos" id="dialog_tournament_end_selfPos"></span>
+			<img class="dialogTournamentEndImg" id="dialog_tournament_end_selfImg" src="" />
+			<span class="dialogTournamentEndUser" id="dialog_tournament_end_selfUser"></span>
+		</div>
+	</div>
+
+	<p class="dialogTournamentEndP"><a href="#" id="dialog_tournament_end_detailed">Detaillierte Ergebnisse ansehen</a></p>
+	<div class="dialogTournamentEndButtons">
+		<input id="dialog_tournament_end_more_button" type="button" class="button-submit" value="Weitere Turniere ..."/>
+		<input id="dialog_tournament_end_ok_button" type="button" class="button-cancel" value="Schlie√üen"/>
+	</div>
+  </div>
+  <!-- END Tournament Dialogs -->
+
+<div id="blockerDiv" class="chess_com_hidden">
+</div>
+
+<div id="dialog_blocker" class="dojoxFloatingPane dojoxFloatingPaneFg dialogBlocker">
+    <div class="dojoxFloatingPaneTitle">
+        <span class="dijitInline dijitTitleNode">Nachricht</span>
+    </div>
+    <div class="dojoxFloatingPaneCanvas">
+        <div class="dojoxFloatingPaneContent">
+            <h3 id="blockerMsg"></h3>
+            <br/>
+            <input id="dialog_blocker_button" type="button" class="button-submit" value="OK"/>
+        </div>
+    </div>
+</div>
+
+  <!-- SETTINGS DIALOG -->
+  <div id="dialog_settings" class="chess_com_hidden">
+    <div id="dialog_settings_tabs">
+      <!-- Board -->
+      <div id="dialog_settings_board">
+            <table class="tableLayout lc4dialog">
+              <tr>
+              <th><label for="dialog_settings_pieces_style_select">Figurensatz:</label></th>
+              <td>
+                <select id="dialog_settings_pieces_style_select" class="dialogSettingsSelect">
+                  <option value="classic" selected="selected">klassisch</option>
+                  <option value="book">Buch</option>
+                  <option value="modern2">Modern</option>
+                  <option value="club">Club</option>
+                  <option value="alpha">Alpha</option>
+                  <option value="cases">Kl√∂tze</option>
+                  <option value="condal">Condal</option>
+                  <option value="lines">abstrakt</option>
+                  <option value="maya">Maya</option>
+                  <option value="vintage">Gro√üvater</option>
+                  <option value="3dwood">3D - Holz</option>
+                  <option value="3dplastic">3D - Kunststoff</option>
+                  <option value="3dchesskid">3D - ChessKid</option>
+				  <option value="blindfold">Blindschach</option>
+				  <option value="real3d">Real 3D (beta)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="dialog_settings_board_size_select">Brettgr√∂√üe:</label></th>
+              <td>
+                <select id="dialog_settings_board_size_select" class="dialogSettingsSelect">
+                  <option value="30">winzig</option>
+                  <option value="38">sehr klein</option>
+                  <option value="45">klein</option>
+                  <option value="53" selected="selected">Standardgr√∂√üe</option>
+                  <option value="60">gro√ü</option>
+                  <option value="68">sehr gro√ü</option>
+                  <option value="75">riesig</option>
+                  <option value="83">super-riesig</option>
+                  <option value="90">gigantisch</option>
+				  <option value="97">galaktisch gro√ü</option>
+				  <option value="105">Maximalgr√∂√üe</option>
+				  <option value="70">Real 3D (beta)</option>
+                </select>
+              </td>
+            </tr>
+              <tr>
+                  <th><label for="dialog_settings_board_style_select">Brett-Stil:</label></th>
+                  <td>
+                    <select id="dialog_settings_board_style_select" class="dialogSettingsSelect">
+                  <option value="brown">braun</option>
+                  <option value="green">gr√ºn</option>
+                  <option value="blue">blau</option>
+                  <option value="grey">grau</option>
+                  <option value="red">rot</option>
+                  <option value="orange">orange</option>
+                  <option value="purple">Violett</option>
+                  <option value="pink">rosa</option>
+                  <option value="blackwhite">Schwarz-Wei√ü</option>
+                  <option value="tan">sanftes Braun</option>
+                  <option value="winboard">Winboard</option>
+                  <option value="woodlight">Holz - hell</option>
+                  <option value="woodmid">Holz - mittel</option>
+                  <option value="wooddark">Holz - dunkel</option>
+                  <option value="woodolive">Holz - Olivgr√ºn</option>
+                  <option value="metal">Metall</option>
+                  <option value="marblegreen">marmoriert gr√ºn</option>
+                  <option value="marbleblue">marmoriert blau</option>
+                  <option value="marblebrown">marmoriert braun</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+                  <th><label for="dialog_settings_layout_select">Brettlayout:</label></th>
+                  <td>
+                    <select id="dialog_settings_layout_select" class="dialogSettingsSelect">
+						<option value="0" selected="selected">Brett links</option>
+						<option value="1">Brett rechts</option>
+                    </select>
+                  </td>
+            </tr>
+              <tr>
+              <th><label for="dialog_settings_flipboard_checkbox">Brett drehen:</label></th>
+              <td>
+                <input id="dialog_settings_flipboard_checkbox" class="checkbox"
+                           type="checkbox"
+                           value="flipboard"
+                           /><label for="dialog_settings_flipboard_checkbox">Brett immer so drehen, dass Wei√ü unten ist</label>
+              </td>
+              </tr>
+              <tr>
+              <th><label for="dialog_settings_enable_sounds_checkbox">Sounds:</label></th>
+                  <td >
+                    <input id="dialog_settings_enable_sounds_checkbox" class="checkbox"
+                           type="checkbox"
+                           value="enablesounds"
+                           checked="checked"
+                           /><label for="dialog_settings_enable_sounds_checkbox">Sounds aktivieren</label>
+              </td>
+              </tr>
+              <tr>
+              <th><label for="dialog_settings_coordinates_select">Koordinaten:</label></th>
+              <td ><select id="dialog_settings_coordinates_select">
+                <option value="off">Koordinaten nicht anzeigen</option>
+				<option value="in">Koordinaten (a-h, 1-8) innerhalb des Brettes anzeigen</option>
+				<option value="out">Koordinaten (a-h, 1-8) au√üen am Brett anzeigen</option>
+
+                </select>
+              </td>
+              </tr>
+              <tr>
+              <th><label for="dialog_settings_highlight_checkbox">letzten Zug markieren:</label></th>
+                  <td ><input id="dialog_settings_highlight_checkbox" class="checkbox"
+                           type="checkbox"
+                           value="highlight"
+                           checked="checked"
+                           /><label for="dialog_settings_highlight_checkbox">Ausgangs- und Zielfeld des letzten ausgef√ºhrten Zuges markieren</label>
+              </td>
+              </tr>
+            </table>
+      </div>
+      <!-- END: Board -->
+
+      <!-- Move -->
+      <div id="dialog_settings_play">
+          <table class="tableLayout lc4dialog">
+            <tr>
+            <th><label for="dialog_settings_premove_checkbox">Premoves:</label></th>
+            <td>
+              <input id="dialog_settings_premove_checkbox" class="checkbox"
+                         type="checkbox"
+                         value="premove"
+                         checked="checked"
+                         /><label for="dialog_settings_premove_checkbox">F√ºhre Pre-Moves aus, bevor dein Gegner zieht.</label>
+            </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_promotion_checkbox">Umwandlung:</label></th>
+            <td>
+              <input id="dialog_settings_promotion_checkbox" class="checkbox"
+                         type="checkbox"
+                         value="promotion"
+                         /><label for="dialog_settings_promotion_checkbox">Immer in Dame umwandeln</label>
+            </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_multiplay_checkbox">Simultan:</label></th>
+            <td>
+              <input id="dialog_settings_multiplay_checkbox" class="checkbox"
+                         type="checkbox"
+                         value="multiplay"
+                         /><label for="dialog_settings_multiplay_checkbox">Mehrere Partien gleichzeitig spielen</label>
+            </td>
+            </tr>
+
+			<tr>
+			<th><label for="dialog_settings_autotop_checkbox">Spitzenpartien:</label></th>
+            <td>
+              <input id="dialog_settings_autotop_checkbox" class="checkbox"
+                         type="checkbox"
+                         value="multiplay"
+                         /><label for="dialog_settings_autotop_checkbox">Beim Start automatisch Spitzenpartien verfolgen</label>
+            </td>
+			</tr>
+
+            <tr>
+            <th><label for="dialog_settings_challengesfrom_select">Herausforderungen von:</label></th>
+                <td>
+                  <select id="dialog_settings_challengesfrom_select" class="dialogSettingsSelect">
+                <option value="0">allen Mitgliedern</option>
+                <option value="1">nur von meinen Freunden</option>
+                <option value="2">niemandem</option>
+                  </select>
+                </td>
+            </tr>
+			<tr>
+				<th></th>
+				<td><label for="dialog_settings_challenge_min_rating" class="maxRatingLabel" title="Mindestrating des Gegners: relativ (z.B. ‚Äú-200‚Äù) oder exakt (z.B. ‚Äú1200‚Äù)">min. Rating:</label>
+				<input type="text" id="dialog_settings_challenge_min_rating" value="" maxlength="5" class="newGamePaneInput" title="Mindestrating des Gegners: relativ (z.B. ‚Äú-200‚Äù) oder exakt (z.B. ‚Äú1200‚Äù)" /></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><label for="dialog_settings_challenge_max_rating" class="maxRatingLabel" title="Maximalrating des Gegners: relativ (z.B. ‚Äú+200‚Äù) oder exakt (z.B. ‚Äú1600‚Äù)">max. Rating:</label>
+				<input type="text" id="dialog_settings_challenge_max_rating" value="" maxlength="5" class="newGamePaneInput" title="Maximalrating des Gegners: relativ (z.B. ‚Äú+200‚Äù) oder exakt (z.B. ‚Äú1600‚Äù)" /></td>
+			</tr>
+            <tr>
+            <th><label for="dialog_settings_privatechatfrom_select">Chat-Anfragen von:</label></th>
+                <td>
+                  <select id="dialog_settings_privatechatfrom_select" class="dialogSettingsSelect">
+                <option value="0">allen Mitgliedern</option>
+                <option value="1">nur von meinen Freunden</option>
+                <option value="2">niemandem</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_chat_select">Chat:</label></th>
+                <td>
+                  <select id="dialog_settings_chat_select" class="dialogSettingsSelect">
+                <option value="false">immer</option>
+                <option value="true">nie</option>
+                  </select>
+                </td>
+            </tr>
+          </table>
+      </div>
+      <!-- END: Move -->
+
+      <!-- Popup Alerts -->
+      <div id="dialog_settings_popupalerts">
+          <table class="tableLayout lc4dialog">
+            <tr>
+              <td colspan="2">
+                Wann m√∂chtest du Spezial-Benachrichtigungen erhalten? <br/>(Diese erscheinen in Form von Pop-up-Fenstern oder Chat-Nachrichten.)              </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_popup_challenges_select">Herausforderungen:</label></th>
+                <td>
+                  <select id="dialog_settings_popup_challenges_select" class="dialogSettingsSelect">
+                <option value="0">alle Herausforderungen</option>
+                <option value="2">nur von Freunden</option>
+                <option value="1">keine</option>
+              </select>
+            </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_popup_friends_select">Freunde:</label></th>
+                <td>
+                  <select id="dialog_settings_popup_friends_select" class="dialogSettingsSelect">
+                <option value="0">Anfragen, Logins, Logouts</option>
+                <option value="2">nur bei Anfragen</option>
+                <option value="1">keine</option>
+              </select>
+            </td>
+            </tr>
+            <tr>
+            <th><label for="dialog_settings_event_announcement_select">Ank√ºndigungen:</label></th>
+                <td>
+                  <select id="dialog_settings_event_announcement_select" class="dialogSettingsSelect">
+                <option value="0">im Partie-Chat aus</option>
+                <option value="1">immer aus</option>
+                <option value="2">immer an</option>
+              </select>
+            </td>
+            </tr>
+          </table>
+      </div>
+      <!-- END: Popup Alerts -->
+
+	  <!-- Tabs -->
+    <div id="dialog_settings_panetabs" class="dialogSettingsPaneTabs">
+		<table class="tableLayout lc4dialog">
+            <tr>
+              <td colspan="2">
+                Welche Tabs m√∂chtest du sehen?              </td>
+            </tr>
+			<tr>
+			  <td><input type="checkbox" class="checkbox" id="dialog_settings_tabfriends_checkbox" />
+				<label for="dialog_settings_tabfriends_checkbox">Freunde</label></td>
+			  <td><input type="checkbox" class="checkbox" id="dialog_settings_tabgames_checkbox" />
+				<label for="dialog_settings_tabgames_checkbox">Partien &amp; Spieler</label></td>
+			  <td><input type="checkbox" class="checkbox" id="dialog_settings_tabevents_checkbox" />
+			  	<label for="dialog_settings_tabevents_checkbox">Events</label></td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox" class="checkbox" id="dialog_settings_tabchats_checkbox" />
+				<label for="dialog_settings_tabchats_checkbox">Chat-R√§ume</label></td>
+			  <td><input type="checkbox" class="checkbox" id="dialog_settings_tabhistory_checkbox" />
+				<label for="dialog_settings_tabhistory_checkbox">Archiv</label></td>
+			  <td></td>
+			</tr>
+		</table>
+	  </div>
+	   <!-- END: Tabs -->
+
+	  <!-- Seek Filter -->
+	  <div id="dialog_seek_filter" class="dialogSeekFilter">
+		<table class="tableLayout lc4dialog">
+		  <tr>
+			<td>Diese Filter legen fest, welche Partieherausforderungen dir in der Grafik angezeigt werden, sie beeinflussen nicht die Herausforderungen, die du erstellst.</td>
+		  </tr>
+		</table>
+
+		<table class="tableLayout lc4dialog lc4dialogShort">
+		  <tr>
+			<td class="alignLeft" colspan="4">
+				<label for="min_time_input">
+					<img src="http://cssjs.chesscomfiles.com/js/chess/images/livechess/16_clock_analog_1.png" class="seekFilterIcon" />
+					&nbsp;Partiebedenkzeit:
+				</label>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="alignRight dialogSeekFilterMinTimeLabel"><label for="min_time_input">Min.:</label></td>
+			<td><input id="min_time_input" size="3" type="text" /></td>
+			<td class="alignRight"><label for="max_time_input">Max.:</label></td>
+			<td><input id="max_time_input" size="3" type="text" /></td>
+		  </tr>
+		  <tr>
+			<td class="alignLeft" colspan="4">
+				<label for="min_rating_input">
+					<img src="http://cssjs.chesscomfiles.com/js/chess/images/livechess/chart_bar.png" class="seekFilterIcon" />
+					&nbsp;Gegnerrating:
+				</label>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="alignRight"><label for="min_rating_input">Min.:</label></td>
+			<td><input id="min_rating_input" type="text" size="3" /></td>
+			<td class="alignRight"><label for="max_rating_input">Max.:</label></td>
+			<td><input id="max_rating_input" type="text" size="3" /></td>
+		  </tr>
+		</table>
+
+		<table class="tableLayout lc4dialog lc4dialogShort">
+		  <tr>
+			<td class="alignLeft dialogSeekFilterRatedOnlyLabel">
+			  <label for="rated_only_checkbox" class="bold">nur mit Ratingauswertung:</label>
+			</td>
+			<td class="alignLeft">
+			  <input id="rated_only_checkbox" type="checkbox" class="checkbox"/>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="alignLeft">
+				<label for="premium_only_checkbox">
+					<img src="http://cssjs.chesscomfiles.com/js/chess/images/livechess/star.png"  class="seekFilterIcon" />
+					&nbsp;Nur Premiummitglieder:
+				</label>
+			</td>
+			<td class="alignLeft">
+			  <input id="premium_only_checkbox" type="checkbox"  class="checkbox"/>
+			</td>
+		  </tr>
+		  <tr>
+			<td class="alignLeft">
+				<label for="hide_computers_checkbox">
+					<img src="http://cssjs.chesscomfiles.com//images/icons/fam/computer.png"  class="seekFilterIcon" />
+					&nbsp;Computer ausblenden:
+				</label>
+			</td>
+			<td class="alignLeft">
+			  <input id="hide_computers_checkbox" type="checkbox" class="checkbox" />
+			</td>
+		  </tr>
+		</table>
+	  </div>
+	  <!-- END: Filter -->
+
+    </div>
+
+    <div id="dialog_settings_buttons">
+        <input type="button" id="dialog_settings_button_save" class="button-submit dialogButton" value="Einstellungen speichern" />
+        <input type="button" id="dialog_settings_close_window_button" class="button-cancel dialogButton" value="Abbrechen"/>
+    </div>
+  </div>
+  <!-- END: SETTINGS DIALOG -->
+
+
+
+<script>
+//<![CDATA[
+
+            var Config = {
+                "application.version": 2013121801,
+                "cometd.url": "/cometd",
+                "domain.main": "http://www.chess.com",
+                "domain.static": "http://cssjs.chesscomfiles.com",
+                "domain.files": "http://files.chesscomfiles.com",
+                "domain.live": "http://live.chess.com",
+                "domain.livews": "http://live.chess.com",
+                "domain.livewss": "https://live.chess.com",
+                "domain.voice": "rtmp://voice.chess.com",
+                "domain.cssjs": "http://cssjs.chesscomfiles.com",
+                "domain.images": "http://images.chesscomfiles.com",
+                "domain.avatars": "http://avatars.chesscomfiles.com"
+            };
+        
+//]]>
+</script>
+<script src="http://cssjs.chesscomfiles.com/js/bundled/dojochess.v2013121801.js"></script>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/jquery/jquery-1.10.2.min.v2013121801.js"></script>
+<script src="http://cssjs.chesscomfiles.com/js/cometd/cometd.v2013121801.js"></script>
+<scrìﬂJ8
+----------------------------------------
+PR_Write() is called with a buffer of 236 bytes
+
+0x7fa0ae516000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
+0x7fa0ae516010: 00 00 00 0b 00 00 00 0b 08 06 00 00 00 a9 ac 77  ...............w
+0x7fa0ae516020: 26 00 00 00 b3 49 44 41 54 78 da 63 60 20 1b cc  &....IDATx.c`...
+0x7fa0ae516030: 64 c8 07 e2 f3 40 fc 1f 88 6f 03 f1 64 20 e6 41  d....@...o..d..A
+0x7fa0ae516040: 57 c4 0c c4 5b a0 8a 50 30 cf 2c 9e d7 06 f3 f4  W...[..P0.,.....
+0x7fa0ae516050: 65 91 15 a7 61 53 08 c3 86 f3 0d ef ae 5f bb 56  e...aS......._.V
+0x7fa0ae516060: 00 a6 f8 00 3e c5 ac b3 58 ff ae 5e bb b2 12 a6  ....>...X..^....
+0x7fa0ae516070: f8 06 3e c5 20 3c 7f f5 dc bd 30 c5 7b f1 29 e4  ..>..<....0.{.).
+0x7fa0ae516080: 9c c5 f9 6b cd da 55 07 60 8a 43 f0 29 76 59 e8  ...k..U.`.C.)vY.
+0x7fa0ae516090: fc 08 e8 e6 4d 70 3f 4a ce 91 d8 84 4d a1 f4 1c  ....Mp?J....M...
+0x7fa0ae5160a0: e9 4f ab d6 ac 38 08 54 9c 8e 12 82 fe 8b fc 96  .O...8.T........
+0x7fa0ae5160b0: 28 cd 55 7a 0f f2 90 d4 1c a9 cf 01 8b fc ef 42  (.Uz...........B
+0x7fa0ae5160c0: 15 ce 04 62 16 8c 78 01 0a 3a 03 f1 04 20 de 01  ...b..x..:......
+0x7fa0ae5160d0: c4 b3 81 38 0a a6 10 00 80 1e 96 fd 87 43 02 73  ...8.........C.s
+0x7fa0ae5160e0: 00 00 00 00 49 45 4e 44 ae 42 60 82              ....IEND.B`.
+PR_Write() is called with a buffer of 236 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e4 9b ba 49 d4 c0 c1 6b b7 f3 db 27 ba  ......I...k...'.
+0x7fa0b1e6c330: fe d6 6b ee b9 95 3a b1 e9 cc 20 b7 fe 95 3c a7  ..k...:.......<.
+0x7fa0b1e6c340: fe c8 6b f8 b9 de 28 a0 fa 98 73 af b9 d8 28 a7  ..k...(...s...(.
+0x7fa0b1e6c350: fe ce 20 b9 fe 98 73 e7 ab 8a 79 f8 b9 ce 20 b9  ......s...y.....
+0x7fa0b1e6c360: fe d3 27 b7 b9 80 79 f8 b9 c8 28 a0 fe de 6b ee  ..'...y...(...k.
+0x7fa0b1e6c370: ef c8 3c b1 b7 98 2a bb f7 d5 3b f6 a1 d4 3c b8  ..<...*...;...<.
+0x7fa0b1e6c380: f7 96 6b b9 f2 d4 3b b5 ef d3 27 b3 b9 80 78 e6  ..k...;...'...x.
+0x7fa0b1e6c390: ab 8a 65 f6 f6 db 31 a6 fa ce 20 ba fc 98 73 e5  ..e...1.......s.
+0x7fa0b1e6c3a0: a3 89 79 f8 b9 dc 3b bb f6 98 73 f6 e9 d5 2a b7  ..y...;...s...*.
+0x7fa0b1e6c3b0: f3 df 27 f6 b7 98 3a bd ff 98 73 f6 fc c9 2c a6  ..'...:...s...,.
+0x7fa0b1e6c3c0: ed 98 65 f6 ef d3 2d f6 a1 98 0a bc fa d6 25 b1  ..e...-.......%.
+0x7fa0b1e6c3d0: f5 dd 2c f6 e6 96 6b bd ff 98 73 f6 a8 8b 6b f8  ..,...k...s...k.
+0x7fa0b1e6c3e0: b9 d9 25 bd fe d4 3d 9d ff 98 73 f6 af 8e 3f a0  ..%...=...s...?.
+0x7fa0b1e6c3f0: a8 d2 2f e7 eb ca 23 a3 f1 df 7f b1 ee d6 70 e2  ../...#.......p.
+0x7fa0b1e6c400: ae c9 24 ec f4 c0 7c ba ab 98 34 89              ..$...|...4.
+PR_Write() is called with a buffer of 239 bytes
+
+0x7fa0ae330000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
+0x7fa0ae330010: 00 00 00 0b 00 00 00 0b 08 06 00 00 00 a9 ac 77  ...............w
+0x7fa0ae330020: 26 00 00 00 b6 49 44 41 54 78 da 63 60 20 17 cc  &....IDATx.c`...
+0x7fa0ae330030: 38 c3 90 0f c4 e7 81 f8 3f 10 df 06 e2 c9 40 cc  8.......?.....@.
+0x7fa0ae330040: 83 ae 88 19 88 b7 40 15 a1 e0 59 a7 78 5e cf 3b  ......@...Y.x^.;
+0x7fa0ae330050: a2 2f 8b ac 38 0d 9b 42 18 9e 7f c4 f0 ee ba f5  ./..8..B........
+0x7fa0ae330060: 6b 05 60 8a 0f e0 53 3c f3 34 eb df 75 1b 56 56  k.`...S<.4..u.VV
+0x7fa0ae330070: c2 14 df c0 a7 18 84 d7 6e 9a bb 17 a6 78 2f 3e  ........n....x/>
+0x7fa0ae330080: 85 b3 4e 73 fe 5a b7 7e d5 01 98 e2 10 7c 8a 17  ..Ns.Z.......|..
+0x7fa0ae330090: 1e 74 7e 04 74 f3 26 b8 27 67 9f 90 d8 84 4d e1  .t..t.&.'g....M.
+0x7fa0ae3300a0: ec e3 d2 9f d6 6d 58 71 10 a8 38 1d 25 08 17 ed  .....mXq..8.%...
+0x7fa0ae3300b0: f7 5b 32 e7 98 d2 7b 90 87 e6 9c 90 fa bc 78 bf  .[2...{.......x.
+0x7fa0ae3300c0: ff 5d a8 c2 99 40 cc 82 11 31 40 41 67 20 9e 00  .]...@...1@Ag...
+0x7fa0ae3300d0: c4 3b 80 78 36 10 47 c1 14 02 00 3b 33 ce 38 65  .;.x6.G....;3.8e
+0x7fa0ae3300e0: fb 15 9f 00 00 00 00 49 45 4e 44 ae 42 60 82     .......IEND.B`.
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ˇ[{"data":{"sid":"gserv","game":{"id":706205227,"gametype":"chess","status":"in_progress","time":{"basetime":1800,"timeinc":0},"seq":67,"players":[{"uid":"Sociedad93","status":"playing","lag":2,"lagms":254,"gid":706205227,"lightning":1880,"blitz":2222,"standard":1850,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":10,"title":null,"mod":false,"new":false,"country":"RO","av":false,"clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Firefox/26; Windows"}},{"uid":"backreg","status":"playing","lag":0,"lagms":93,"gid":706205227,"lightning":2333,"blitz":2235,"standard":2000,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":50,"title":"FM","mod":false,"new":false,"country":"LV","av":true,"avatar":"//d1lalstwiwz2br.cloudfront.net/images_users/avatars/backreg_origin.1.gif","clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Chrome/32; Windows"}}],"grudgematchscores":[1.5,1.5],"moves":"mCYIgv0SlBIBvB!Tbs9zCKTJclJsjsz0dE8!ft1LKT0TpF5QFNQKEwKtktZJNV2UBvSKegKCvMCtae6LMS75wv98vJ!?lD56SY6ZJZLZedZLnvUMDpTsoELUpw?!wnWGdcsKY4","clocks":[337,264],"draws":[],"rated":true,"squares":[0,0]},"tid":"FullGame","top":true},"channel":"/game/706205227"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 238 bytes
+
+0x7fa0adcf3000: 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52  .PNG........IHDR
+0x7fa0adcf3010: 00 00 00 0b 00 00 00 0b 08 06 00 00 00 a9 ac 77  ...............w
+0x7fa0adcf3020: 26 00 00 00 b5 49 44 41 54 78 da 63 60 20 17 3c  &....IDATx.c`..<
+0x7fa0adcf3030: 69 63 c8 07 e2 f3 40 fc 1f 88 6f 03 f1 64 20 e6  ic....@...o..d..
+0x7fa0adcf3040: 41 57 c4 0c c4 5b a0 8a 50 f0 83 2e 9e d7 57 27  AW...[..P.....W'
+0x7fa0adcf3050: 1a c8 22 2b 4e c3 a6 10 86 af 4c 34 bc bb 76 fd  .."+N.....L4..v.
+0x7fa0adcf3060: 7a 01 98 e2 03 f8 14 3f 6a 67 fd bb 6e dd ea 4a  z......?jg..n..J
+0x7fa0adcf3070: 98 e2 1b f8 14 83 f0 a6 35 f3 f7 c2 14 ef c5 a7  ........5.......
+0x7fa0adcf3080: f0 61 07 e7 af 75 eb d6 1c 80 29 0e c1 a7 f8 fc  .a...u....).....
+0x7fa0adcf3090: 74 97 47 40 37 6f 82 7b f2 4e af e4 26 6c 0a 6f  t.G@7o.{.N..&l.o
+0x7fa0adcf30a0: 77 4b 7f 5a bf 7e d5 41 a0 e2 74 94 20 3c 3d d3  wK.Z...A..t..<=.
+0x7fa0adcf30b0: 7f c9 cd 5e a5 f7 20 0f dd e9 91 fa 7c 7a 66 c0  ...^........|zf.
+0x7fa0adcf30c0: 5d a8 c2 99 40 cc 82 11 31 40 41 67 20 9e 00 c4  ]...@...1@Ag....
+0x7fa0adcf30d0: 3b 80 78 36 10 47 c1 14 02 00 f5 a8 cf e5 67 3e  ;.x6.G........g>
+0x7fa0adcf30e0: 25 10 00 00 00 00 49 45 4e 44 ae 42 60 82        %.....IEND.B`.
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+ametype":"chess","color":null,"rated":true,"time":{"basetime":1200,"timeinc":10},"minml":null,"minrating":1177,"maxrating":1277,"rematchgid":null},"tid":"Challenge"},"channel":"/game/fastseek/~1"}]Å{[{"data":{"sid":"gserv","challenge":{"id":11699221,"expire":false},"tid":"ChallengeRemove"},"channel":"/game/fastseek/~1"}]Å{[{"data":{"sid":"gserv","challenge":{"id":11699155,"expire":false},"tid":"ChallengeRemove"},"channel":"/game/fastseek/~1"}]Å3[{"id":"9","data":{"join":true},"channel":"/chat"}]Å{[{"data":{"sid":"gserv","challenge":{"id":11699362,"expire":false},"tid":"ChallengeRemove"},"channel":"/game/fastseek/~1"}]Å{[{"data":{"sid":"gserv","challenge":{"id":11699241,"expire":false},"tid":"ChallengeRemove"},"channel":"/game/fastseek/~1"}]Å~>[{"data":{"sid":"gserv","ratingchanges":[10,-29,-68],"game":{"id":706208958,"gametype":"chess","status":"starting","time":{"basetime":3000,"timeinc":0},"seq":0,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":181,"gid":706208958,"lightning":901,"blitz":1273,"standard":1200,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":10,"title":null,"mod":false,"new":true,"country":"NL","av":false,"clientfeatures":{"examineboard":false,"multiplegames":true,"clientname":"LC4Simple v2013121801; Mozilla/11; Windows"}},{"uid":"rocchen","status":"playing","lag":6,"lagms":609,"gid":706208958,"lightning":1563,"blitz":1630,"standard":1200,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":10,"title":null,"mod":false,"new":false,"country":"DE","av":false,"clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Firefox/26; Linux"},"nonverified":true}],"abortable":[false,true],"moves":"","clocks":[3000,3000],"draws":[],"rated":true,"squares":[0,0]},"tid":"FullGame"},"channel":"/game/706208958"}]Å~{[{"data":{"sid":"gserv","game":{"id":706208958,"status":"starting","seq":0,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":181,"gid":706208958},{"uid":"rocchen","status":"playing","lag":6,"lagÏo‡†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+ms":609,"gid":706208958}],"abortable":[false,true],"moves":"","clocks":[3000,3000],"draws":[],"repeated":true,"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å3[{"id":"9","data":{"join":true},"channel":"/chat"}]Å~m[{"data":{"sid":"gserv","game":{"id":706208958,"status":"starting","seq":1,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":271,"gid":706208958},{"uid":"rocchen","status":"playing","lag":5,"lagms":550,"gid":706208958}],"abortable":[false,true],"moves":"oE","clocks":[3000,3000],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅI[{"id":"41","successful":true,"channel":"/meta/connect","ext":{"ack":6}}]Áo‡†
+----------------------------------------
+PR_Write() is called with a buffer of 233 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e1 97 fa 30 dc cc 81 12 bf ff 9b 5e b2  ......0.......^.
+0x7fa0b1e6c330: f2 96 12 e6 b5 d5 43 b9 e5 8c 59 bf f2 d5 45 af  ......C...Y...E.
+0x7fa0b1e6c340: f2 88 12 f0 b5 9e 51 a8 f6 d8 0a a7 b5 97 5f aa  ......Q......._.
+0x7fa0b1e6c350: f2 d8 0a a7 b5 9d 59 b8 b5 c0 07 ec a1 c8 00 e4  ......Y.........
+0x7fa0b1e6c360: ae cf 08 f0 b5 89 55 ad b5 c0 01 f0 b5 8f 59 b8  ......U.......Y.
+0x7fa0b1e6c370: b5 c0 12 ae f8 99 53 b4 f2 94 12 f0 b5 97 5f aa  ......S......._.
+0x7fa0b1e6c380: f2 d8 0a fe cd b0 12 f0 b5 99 5c b3 f4 91 12 e6  ..........\.....
+0x7fa0b1e6c390: a4 ca 00 ec bb d8 53 b0 f8 99 5b b1 e4 d8 0a ef  ......S...[.....
+0x7fa0b1e6c3a0: a7 ca 00 ec a7 d6 12 af e6 8f 51 ae f2 9e 12 e6  ..........Q.....
+0x7fa0b1e6c3b0: f1 9b 5c af f2 87 1c fe e4 93 54 fe ad d8 57 af  ..\.......T...W.
+0x7fa0b1e6c3c0: f2 88 46 fe bb d8 44 b5 f3 d8 0a fe da 95 46 b9  ..F...D.......F.
+0x7fa0b1e6c3d0: b5 87 1c fe fe 9e 12 e6 b5 ce 03 fe bb d8 53 b0  ..............S.
+0x7fa0b1e6c3e0: fe 9f 5e a8 de 9e 12 e6 b5 ce 04 aa e3 c9 58 ba  ..^...........X.
+0x7fa0b1e6c3f0: a4 8a 40 b6 e0 90 55 ea f2 8f 5c e5 a1 cf 43 b1  ..@...U...\...C.
+0x7fa0b1e6c400: af 95 4a e9 f9 ca 12 a1 ca                       ..J......
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"43","successful":true,"channel":"/service/user"}]Å~Y[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":2,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":271,"gid":706208958},{"uid":"rocchen","status":"playing","lag":5,"lagms":550,"gid":706208958}],"moves":"oEZJ","clocks":[3000,3000],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~[[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":3,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":271,"gid":706208958},{"uid":"rocchen","status":"playing","lag":3,"lagms":326,"gid":706208958}],"moves":"oEZJEM","clocks":[2972,3000],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅI[{"id":"44","successful":true,"channel":"/meta/connect","ext":{"ack":8}}]M¬†
+----------------------------------------
+PR_Write() is called with a buffer of 233 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e1 a0 6d 74 39 fb 16 56 5a c8 0c 1a 57  .....mt9..VZ...W
+0x7fa0b1e6c330: c5 01 56 03 82 42 07 5c d2 1b 1d 5a c5 42 01 4a  ..V..B.\...Z.B.J
+0x7fa0b1e6c340: c5 1f 56 15 82 09 15 4d c1 4f 4e 42 82 00 1b 4f  ..V....M.ONB...O
+0x7fa0b1e6c350: c5 4f 4e 42 82 0a 1d 5d 82 57 43 09 96 5f 44 01  .ONB...].WC.._D.
+0x7fa0b1e6c360: 99 58 4c 15 82 1e 11 48 82 57 47 15 82 18 1d 5d  .XL....H.WG....]
+0x7fa0b1e6c370: 82 57 56 4b cf 0e 17 51 c5 03 56 15 82 00 1b 4f  .WVK...Q..V....O
+0x7fa0b1e6c380: c5 4f 4e 1b 97 3f 56 15 82 0e 18 56 c3 06 56 03  .ON..?V....V..V.
+0x7fa0b1e6c390: 92 54 4c 0f 8c 4f 17 55 cf 0e 1f 54 d3 4f 4e 0b  .TL..O.U...T.ON.
+0x7fa0b1e6c3a0: 99 55 42 0d 92 41 56 4a d1 18 15 4b c5 09 56 03  .UB..AVJ...K..V.
+0x7fa0b1e6c3b0: c6 0c 18 4a c5 10 58 1b d3 04 10 1b 9a 4f 13 4a  ...J..X......O.J
+0x7fa0b1e6c3c0: c5 1f 02 1b 8c 4f 00 50 c4 4f 4e 1b ed 02 02 5c  .....O.P.ON....\
+0x7fa0b1e6c3d0: 82 10 58 1b c9 09 56 03 82 59 42 1b 8c 4f 17 55  ..X...V..YB..O.U
+0x7fa0b1e6c3e0: c9 08 1a 4d e9 09 56 03 82 59 40 4f d4 5e 1c 5f  ...M..V..Y@O.^._
+0x7fa0b1e6c3f0: 93 1d 04 53 d7 07 11 0f c5 18 18 00 96 58 07 54  ...S.........X.T
+0x7fa0b1e6c400: 98 02 0e 0c ce 5d 56 44 fd                       .....]VD.
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"46","successful":true,"channel":"/service/user"}]Å~][{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":4,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":266,"gid":706208958},{"uid":"rocchen","status":"playing","lag":3,"lagms":326,"gid":706208958}],"moves":"oEZJEM7R","clocks":[2972,2986],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅI[{"id":"45","successful":true,"channel":"/meta/connect","ext":{"ack":9}}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~_[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":5,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":266,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":175,"gid":706208958}],"moves":"oEZJEM7RlB","clocks":[2956,2986],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅJ[{"id":"48","successful":true,"channel":"/meta/connect","ext":{"ack":11}}]
+----------------------------------------
+PR_Write() is called with a buffer of 233 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e1 0a 0d 38 da 51 76 1a b9 62 6c 56 b4  ......8.Qv..blV.
+0x7fa0b1e6c330: 6f 61 1a e0 28 22 4b bf 78 7b 51 b9 6f 22 4d a9  oa..("K.x{Q.o"M.
+0x7fa0b1e6c340: 6f 7f 1a f6 28 69 59 ae 6b 2f 02 a1 28 60 57 ac  o...(iY.k/..(`W.
+0x7fa0b1e6c350: 6f 2f 02 a1 28 6a 51 be 28 37 0f ea 3c 3f 08 e2  o/..(jQ.(7..<?..
+0x7fa0b1e6c360: 33 38 00 f6 28 7e 5d ab 28 37 0d f6 28 78 51 be  38..(.].(7..(xQ.
+0x7fa0b1e6c370: 28 37 1a a8 65 6e 5b b2 6f 63 1a f6 28 60 57 ac  (7..en[.oc..(`W.
+0x7fa0b1e6c380: 6f 2f 02 f8 3c 48 1a f6 28 6e 54 b5 69 66 1a e0  o/..<H..(nT.if..
+0x7fa0b1e6c390: 38 34 0e e2 26 2f 5b b6 65 6e 53 b7 79 2f 02 e8  84..&/[.enS.y/..
+0x7fa0b1e6c3a0: 33 3b 00 ee 38 21 1a a9 7b 78 59 a8 6f 69 1a e0  3;..8!..{xY.oi..
+0x7fa0b1e6c3b0: 6c 6c 54 a9 6f 70 14 f8 79 64 5c f8 30 2f 5f a9  llT.op..yd\.0/_.
+0x7fa0b1e6c3c0: 6f 7f 4e f8 26 2f 4c b3 6e 2f 02 f8 47 62 4e bf  o.N.&/L.n/..GbN.
+0x7fa0b1e6c3d0: 28 70 14 f8 63 69 1a e0 28 38 08 f8 26 2f 5b b6  (p..ci..(8..&/[.
+0x7fa0b1e6c3e0: 63 68 56 ae 43 69 1a e0 28 39 0c ac 7e 3e 50 bc  chV.Ci..(9...>P.
+0x7fa0b1e6c3f0: 39 7d 48 b0 7d 67 5d ec 6f 78 54 e3 3c 38 4b b7  9}H.}g].oxT.<8K.
+0x7fa0b1e6c400: 32 62 42 ef 64 3d 1a a7 57                       2bB.d=..W
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"50","successful":true,"channel":"/service/user"}]Å~a[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":6,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":265,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":175,"gid":706208958}],"moves":"oEZJEM7RlB6E","clocks":[2956,2968],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅJ[{"id":"49","successful":true,"channel":"/meta/connect","ext":{"ack":12}}]†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~c[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":7,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":267,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":175,"gid":706208958}],"moves":"oEZJEM7RlB6Efo","clocks":[2932,2968],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅJ[{"id":"51","successful":true,"channel":"/meta/connect","ext":{"ack":13}}]±†
+----------------------------------------
+PR_Write() is called with a buffer of 233 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e1 fe b8 4f 67 a5 c3 6d 04 96 d9 21 09  ......Og..m...!.
+0x7fa0b1e6c330: 9b d4 6d 5d dc 97 3c 02 8c ce 26 04 9b 97 3a 14  ..m]..<...&...:.
+0x7fa0b1e6c340: 9b ca 6d 4b dc dc 2e 13 9f 9a 75 1c dc d5 20 11  ..mK......u.....
+0x7fa0b1e6c350: 9b 9a 75 1c dc df 26 03 dc 82 78 57 c8 8a 7f 5f  ..u...&...xW..._
+0x7fa0b1e6c360: c7 8d 77 4b dc cb 2a 16 dc 82 78 4b dc cd 26 03  ..wK..*...xK..&.
+0x7fa0b1e6c370: dc 82 6d 15 91 db 2c 0f 9b d6 6d 4b dc d5 20 11  ..m...,...mK....
+0x7fa0b1e6c380: 9b 9a 75 45 cb e2 6d 4b dc db 23 08 9d d3 6d 5d  ..uE..mK..#...m]
+0x7fa0b1e6c390: cc 81 7a 5f d2 9a 2c 0b 91 db 24 0a 8d 9a 75 55  ..z_..,...$...uU
+0x7fa0b1e6c3a0: c7 8d 77 53 ce 94 6d 14 8f cd 2e 15 9b dc 6d 5d  ..wS..m.......m]
+0x7fa0b1e6c3b0: 98 d9 23 14 9b c5 63 45 8d d1 2b 45 c4 9a 28 14  ..#...cE..+E..(.
+0x7fa0b1e6c3c0: 9b ca 39 45 d2 9a 3b 0e 9a 9a 75 45 b3 d7 39 02  ..9E..;...uE..9.
+0x7fa0b1e6c3d0: dc c5 63 45 97 dc 6d 5d dc 8d 7a 45 d2 9a 2c 0b  ..cE..m]..zE..,.
+0x7fa0b1e6c3e0: 97 dd 21 13 b7 dc 6d 5d dc 8c 7b 11 8a 8b 27 01  ..!...m]..{...'.
+0x7fa0b1e6c3f0: cd c8 3f 0d 89 d2 2a 51 9b cd 23 5e c8 8d 3c 0a  ..?...*Q..#^..<.
+0x7fa0b1e6c400: c6 d7 35 52 90 88 6d 1a a3                       ..5R..m..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"55","successful":true,"channel":"/service/user"}]Å~e[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":8,"players":[{"uid":"zici","status":"playing","lag":2,"lagms":223,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":174,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Z","clocks":[2932,2958],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~g[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":9,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":181,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":143,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks","clocks":[2904,2958],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 233 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e1 b5 82 10 eb ee f9 32 88 dd e3 7e 85  ..........2.....
+0x7fa0b1e6c330: d0 ee 32 d1 97 ad 63 8e c7 f4 79 88 d0 ad 65 98  ..2...c...y...e.
+0x7fa0b1e6c340: d0 f0 32 c7 97 e6 71 9f d4 a0 2a 90 97 ef 7f 9d  ..2...q...*.....
+0x7fa0b1e6c350: d0 a0 2a 90 97 e5 79 8f 97 b8 27 db 83 b0 20 d3  ..*...y...'.....
+0x7fa0b1e6c360: 8c b7 28 c7 97 f1 75 9a 97 b8 29 c7 97 f7 79 8f  ..(...u...)...y.
+0x7fa0b1e6c370: 97 b8 32 99 da e1 73 83 d0 ec 32 c7 97 ef 7f 9d  ..2...s...2.....
+0x7fa0b1e6c380: d0 a0 2a c9 85 c9 32 c7 97 e1 7c 84 d6 e9 32 d1  ..*...2...|...2.
+0x7fa0b1e6c390: 87 bb 25 db 99 a0 73 87 da e1 7b 86 c6 a0 2a d9  ..%...s...{...*.
+0x7fa0b1e6c3a0: 8c b7 20 df 81 ae 32 98 c4 f7 71 99 d0 e6 32 d1  ......2...q...2.
+0x7fa0b1e6c3b0: d3 e3 7c 98 d0 ff 3c c9 c6 eb 74 c9 8f a0 77 98  ..|...<...t...w.
+0x7fa0b1e6c3c0: d0 f0 66 c9 99 a0 64 82 d1 a0 2a c9 f8 ed 66 8e  ..f...d...*...f.
+0x7fa0b1e6c3d0: 97 ff 3c c9 dc e6 32 d1 97 b7 28 c9 99 a0 73 87  ..<...2...(...s.
+0x7fa0b1e6c3e0: dc e7 7e 9f fc e6 32 d1 97 b6 24 9d c1 b1 78 8d  ......2...$...x.
+0x7fa0b1e6c3f0: 86 f2 60 81 c2 e8 75 dd d0 f7 7c d2 83 b7 63 86  ..`...u...|...c.
+0x7fa0b1e6c400: 8d ed 6a de db b2 32 96 e8                       ..j...2..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"58","successful":true,"channel":"/service/user"}]Å~j[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":10,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":181,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":141,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0K","clocks":[2904,2950],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]âM¬†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~l[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":11,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":138,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0Kgv","clocks":[2866,2950],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅJ[{"id":"59","successful":true,"channel":"/meta/connect","ext":{"ack":19}}]†
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 9c 90 88 3a c7 eb aa 59 f4 f1 e6 54  .......:...Y...T
+0x7fa0b1e6c330: f9 fc aa 00 be bf fb 5f ee e6 e1 59 f9 bf fd 49  ......._...Y...I
+0x7fa0b1e6c340: f9 e2 aa 16 be f4 e9 4e fd b2 b2 41 be fd e7 4c  .......N...A...L
+0x7fa0b1e6c350: f9 b2 b2 41 be f7 e1 5e be aa bf 0a aa a2 b8 02  ...A...^........
+0x7fa0b1e6c360: a5 a5 b0 16 be e3 ed 4b be aa b9 0b b0 b2 fd 53  .......K.......S
+0x7fa0b1e6c370: f8 b2 b2 18 ee ff eb 59 f4 f5 e6 18 b0 b2 e5 55  .......Y.......U
+0x7fa0b1e6c380: ea f5 aa 00 be db cb 18 b0 b2 eb 56 f3 f3 e3 18  ...........V....
+0x7fa0b1e6c390: a6 a2 b1 09 ab bc aa 59 f0 ff eb 51 f1 e3 aa 00  .......Y...Q....
+0x7fa0b1e6c3a0: ae a9 bb 0d a4 a2 a4 18 ef e1 fd 5b ee f5 ec 18  ...........[....
+0x7fa0b1e6c3b0: a6 f6 e9 56 ef f5 f5 16 be e3 e1 5e be aa aa 5d  ...V.......^...]
+0x7fa0b1e6c3c0: ef f5 fa 4c be bc aa 4e f5 f4 aa 00 be dd e7 4c  ...L...N.......L
+0x7fa0b1e6c3d0: f9 b2 f5 16 be f9 ec 18 a6 b2 be 0b be bc aa 59  ...............Y
+0x7fa0b1e6c3e0: f0 f9 ed 54 e8 d9 ec 18 a6 b2 bc 0e ea e4 bb 52  ...T...........R
+0x7fa0b1e6c3f0: fa a3 f8 4a f6 e7 e2 5f aa f5 fd 56 a5 a6 bd 49  ...J..._...V...I
+0x7fa0b1e6c400: f1 a8 e7 40 a9 fe b8 18 e1 cd                    ...@......
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"61","successful":true,"channel":"/service/user"}]Å][{"data":{"total":730,"sid":"userv","items":14544,"tid":"PaginationInfo"},"channel":"/user"}]Å~n[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":12,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":138,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKC","clocks":[2866,2937],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅJ[{"id":"60","successful":true,"channel":"/meta/connect","ext":{"ack":20}}]p∑ÁÎ†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~p[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":13,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":102,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":135,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl","clocks":[2697,2937],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 55 d9 a9 7b 0e a2 8b 18 3d b8 c7 15  ....U..{....=...
+0x7fa0b1e6c330: 30 b5 8b 41 77 f6 da 1e 27 af c0 18 30 f6 dc 08  0..Aw...'...0...
+0x7fa0b1e6c340: 30 ab 8b 57 77 bd c8 0f 34 fb 93 00 77 b4 c6 0d  0..Ww...4...w...
+0x7fa0b1e6c350: 30 fb 93 00 77 be c0 1f 77 e3 9e 4b 63 eb 99 43  0...w...w..Kc..C
+0x7fa0b1e6c360: 6c ec 91 57 77 aa cc 0a 77 e3 98 48 79 fb dc 12  l..Ww...w..Hy...
+0x7fa0b1e6c370: 31 fb 93 59 27 b6 ca 18 3d bc c7 59 79 fb c4 14  1..Y'...=..Yy...
+0x7fa0b1e6c380: 23 bc 8b 41 77 e0 99 59 79 fb ca 17 3a ba c2 59  #..Aw..Yy...:..Y
+0x7fa0b1e6c390: 6f eb 91 43 6d f5 8b 18 39 b6 ca 10 38 aa 8b 41  o..Cm...9...8..A
+0x7fa0b1e6c3a0: 67 e1 91 43 61 e8 85 59 26 a8 dc 1a 27 bc cd 59  g..Ca..Y&...'..Y
+0x7fa0b1e6c3b0: 6f bf c8 17 26 bc d4 57 77 aa c0 1f 77 e3 8b 1c  o...&..Ww...w...
+0x7fa0b1e6c3c0: 26 bc db 0d 77 f5 8b 0f 3c bd 8b 41 77 94 c6 0d  &...w...<..Aw...
+0x7fa0b1e6c3d0: 30 fb d4 57 77 b0 cd 59 6f fb 9e 4a 77 f5 8b 18  0..Ww..Yo..Jw...
+0x7fa0b1e6c3e0: 39 b0 cc 15 21 90 cd 59 6f fb 9d 4f 23 ad 9a 13  9...!..Yo..O#...
+0x7fa0b1e6c3f0: 33 ea d9 0b 3f ae c3 1e 63 bc dc 17 6c ef 9c 08  3...?...c...l...
+0x7fa0b1e6c400: 38 e1 c6 01 60 b7 99 59 28 84                    8...`..Y(.
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~r[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":14,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":104,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":157,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90","clocks":[2697,2888],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~t[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":15,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":104,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":156,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr","clocks":[2679,2888],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]≠+A
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 df 83 b7 93 84 f8 95 f0 b7 e2 d9 fd  ................
+0x7fa0b1e6c330: ba ef 95 a9 fd ac c4 f6 ad f5 de f0 ba ac c2 e0  ................
+0x7fa0b1e6c340: ba f1 95 bf fd e7 d6 e7 be a1 8d e8 fd ee d8 e5  ................
+0x7fa0b1e6c350: ba a1 8d e8 fd e4 de f7 fd b9 80 a3 e9 b1 87 ab  ................
+0x7fa0b1e6c360: e6 b6 8f bf fd f0 d2 e2 fd b9 86 a6 f3 a1 c2 fa  ................
+0x7fa0b1e6c370: bb a1 8d b1 ad ec d4 f0 b7 e6 d9 b1 f3 a1 da fc  ................
+0x7fa0b1e6c380: a9 e6 95 a9 fd b2 fb b1 f3 a1 d4 ff b0 e0 dc b1  ................
+0x7fa0b1e6c390: e5 b1 80 aa ed af 95 f0 b3 ec d4 f8 b2 f0 95 a9  ................
+0x7fa0b1e6c3a0: ed b4 8e a1 eb ba 9b b1 ac f2 c2 f2 ad e6 d3 b1  ................
+0x7fa0b1e6c3b0: e5 e5 d6 ff ac e6 ca bf fd f0 de f7 fd b9 95 f4  ................
+0x7fa0b1e6c3c0: ac e6 c5 e5 fd af 95 e7 b6 e7 95 a9 fd ce d8 e5  ................
+0x7fa0b1e6c3d0: ba a1 ca bf fd ea d3 b1 e5 a1 80 a4 fd af 95 f0  ................
+0x7fa0b1e6c3e0: b3 ea d2 fd ab ca d3 b1 e5 a1 83 a7 a9 f7 84 fb  ................
+0x7fa0b1e6c3f0: b9 b0 c7 e3 b5 f4 dd f6 e9 e6 c2 ff e6 b5 82 e0  ................
+0x7fa0b1e6c400: b2 bb d8 e9 ea ed 87 b1 a2 de                    ..........
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~v[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":16,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":104,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":159,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1L","clocks":[2679,2792],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~x[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":17,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":100,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1Lpx","clocks":[2663,2792],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 f0 90 50 a9 ab eb 72 ca 98 f1 3e c7  ......P...r...>.
+0x7fa0b1e6c330: 95 fc 72 93 d2 bf 23 cc 82 e6 39 ca 95 bf 25 da  ..r...#...9...%.
+0x7fa0b1e6c340: 95 e2 72 85 d2 f4 31 dd 91 b2 6a d2 d2 fd 3f df  ..r...1...j...?.
+0x7fa0b1e6c350: 95 b2 6a d2 d2 f7 39 cd d2 aa 67 99 c6 a2 60 91  ..j...9...g...`.
+0x7fa0b1e6c360: c9 a5 68 85 d2 e3 35 d8 d2 aa 61 9e dc b2 25 c0  ..h...5...a...%.
+0x7fa0b1e6c370: 94 b2 6a 8b 82 ff 33 ca 98 f5 3e 8b dc b2 3d c6  ..j...3...>...=.
+0x7fa0b1e6c380: 86 f5 72 93 d2 d5 1e 8b dc b2 33 c5 9f f3 3b 8b  ..r.......3...;.
+0x7fa0b1e6c390: ca a2 67 9e c7 bc 72 ca 9c ff 33 c2 9d e3 72 93  ..g...r...3...r.
+0x7fa0b1e6c3a0: c2 a7 67 9e c8 a0 7c 8b 83 e1 25 c8 82 f5 34 8b  ..g...|...%...4.
+0x7fa0b1e6c3b0: ca f6 31 c5 83 f5 2d 85 d2 e3 39 cd d2 aa 72 ce  ..1...-...9...r.
+0x7fa0b1e6c3c0: 83 f5 22 df d2 bc 72 dd 99 f4 72 93 d2 dd 3f df  .."...r...r...?.
+0x7fa0b1e6c3d0: 95 b2 2d 85 d2 f9 34 8b ca b2 68 99 d2 bc 72 ca  ..-...4...h...r.
+0x7fa0b1e6c3e0: 9c f9 35 c7 84 d9 34 8b ca b2 64 9d 86 e4 63 c1  ..5...4...d...c.
+0x7fa0b1e6c3f0: 96 a3 20 d9 9a e7 3a cc c6 f5 25 c5 c9 a6 65 da  ......:...%...e.
+0x7fa0b1e6c400: 9d a8 3f d3 c5 fe 60 8b 8d cd                    ..?...`...
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å_[{"data":{"total":730,"sid":"userv","items":14559,"tid":"PaginationInfo"},"channel":"/user-b"}]Å~y[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":18,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":99,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":162,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxEN","clocks":[2663,2777],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å3[{"id":"9","data":{"join":true},"channel":"/chat"}]Å~|[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":19,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":107,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":145,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxF","clocks":[2617,2777],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 f8 fe 13 04 a3 85 31 67 90 9f 7d 6a  ..........1g..}j
+0x7fa0b1e6c330: 9d 92 31 3e da d1 60 61 8a 88 7a 67 9d d1 66 77  ..1>..`a..zg..fw
+0x7fa0b1e6c340: 9d 8c 31 28 da 9a 72 70 99 dc 29 7f da 93 7c 72  ..1(..rp..)...|r
+0x7fa0b1e6c350: 9d dc 29 7f da 99 7a 60 da c4 24 34 ce cc 23 3c  ..)...z`..$4..#<
+0x7fa0b1e6c360: c1 cb 2b 28 da 8d 76 75 da c4 22 3d d4 dc 66 6d  ..+(..vu.."=..fm
+0x7fa0b1e6c370: 9c dc 29 26 8a 91 70 67 90 9b 7d 26 d4 dc 7e 6b  ..)&..pg..}&...k
+0x7fa0b1e6c380: 8e 9b 31 3e da b2 57 26 d4 dc 70 68 97 9d 78 26  ..1>..W&..ph..x&
+0x7fa0b1e6c390: c2 cc 24 32 ce d2 31 67 94 91 70 6f 95 8d 31 3e  ..$2..1g..po..1>
+0x7fa0b1e6c3a0: ca c9 25 32 ca c7 3f 26 8b 8f 66 65 8a 9b 77 26  ..%2..?&..fe..w&
+0x7fa0b1e6c3b0: c2 98 72 68 8b 9b 6e 28 da 8d 7a 60 da c4 31 63  ..rh..n(..z`..1c
+0x7fa0b1e6c3c0: 8b 9b 61 72 da d2 31 70 91 9a 31 3e da b3 7c 72  ..ar..1p..1>..|r
+0x7fa0b1e6c3d0: 9d dc 6e 28 da 97 77 26 c2 dc 2b 37 da d2 31 67  ..n(..w&..+7..1g
+0x7fa0b1e6c3e0: 94 97 76 6a 8c b7 77 26 c2 dc 27 30 8e 8a 20 6c  ..vj..w&..'0...l
+0x7fa0b1e6c3f0: 9e cd 63 74 92 89 79 61 ce 9b 66 68 c1 c8 26 77  ..ct..ya..fh..&w
+0x7fa0b1e6c400: 95 c6 7c 7e cd 90 23 26 85 a3                    ..|...#&..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"83","successful":true,"channel":"/service/user"}]Å~~[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":20,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":107,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":147,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLD","clocks":[2617,2766],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 232 bytes
+
+0x7fa0bf569ac0: 3b af 31 12 03 00 00 00 01 00 00 00 00 00 00 00  ;.1.............
+0x7fa0bf569ad0: 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+0x7fa0bf569ae0: 01 00 00 00 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569af0: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b00: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b10: 00 00 00 01 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569b20: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b30: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b40: 00 00 00 01 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569b50: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b60: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b70: 00 00 00 01 86 94 dd fa a9 b9 87 86 5c 99 1e a0  ............\...
+0x7fa0bf569b80: 79 28 3e 00 ba e3 6c fb 34 18 91 24 4a 98 64 73  y(>...l.4..$J.ds
+0x7fa0bf569b90: c8 ed 93 48 01 00 00 00 4b 5d 55 10 54 57 48 00  ...H....K]U.TWH.
+0x7fa0bf569ba0: 62 3e f5 ae 3f d1 1f a8                          b>..?...
+PR_Write() is called with a buffer of 232 bytes
+
+0x7fa0bf569ac0: 3b af 31 12 03 00 00 00 01 00 00 00 00 00 00 00  ;.1.............
+0x7fa0bf569ad0: 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00  ................
+0x7fa0bf569ae0: 01 00 00 00 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569af0: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b00: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b10: 00 00 00 01 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569b20: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b30: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b40: 00 00 00 01 08 00 00 00 78 9c 03 00 00 00 00 01  ........x.......
+0x7fa0bf569b50: 08 00 00 00 78 9c 03 00 00 00 00 01 08 00 00 00  ....x...........
+0x7fa0bf569b60: 78 9c 03 00 00 00 00 01 08 00 00 00 78 9c 03 00  x...........x...
+0x7fa0bf569b70: 00 00 00 01 cf cf 00 fc 95 c1 86 55 56 6b 5c 89  ...........UVk\.
+0x7fa0bf569b80: f3 25 2f 20 36 ac 55 62 f2 fb ec 10 77 23 bc 29  .%/.6.Ub....w#.)
+0x7fa0bf569b90: f9 f9 6f a6 01 00 00 00 79 a4 d9 8e b3 ed 16 3a  ..o.....y......:
+0x7fa0bf569ba0: aa 06 5c 59 af 04 b6 02                          ..\Y....
+PR_Write() is called with a buffer of 238 bytes
+
+0x7fa0af3c2608: ab 15 78 69 5d 71 95 c4 49 a4 6a 54 fe fc 6e 2e  ..xi]q..I.jT..n.
+0x7fa0af3c2618: ee a6 c9 50 b1 44 43 e4 77 73 2c fb 05 f8 68 42  ...P.DC.ws,...hB
+0x7fa0af3c2628: 43 f7 f5 c7 45 16 fa e0 69 fe 27 fe fe 66 de 5c  C...E...i.'..f.\
+0x7fa0af3c2638: 5d 69 6a 1f fe d5 e0 9d 3e c5 3f c3 43 44 42 b4  ]ij.....>.?.CDB.
+0x7fa0af3c2648: 16 7c 37 63 8e 67 35 68 f7 8d bb 26 c5 73 83 7f  .|7c.g5h...&.s..
+0x7fa0af3c2658: c6 6d 70 8a c5 2e e7 e2 e5 fe 80 71 e1 18 fc c9  .mp........q....
+0x7fa0af3c2668: fe 42 d0 8d 65 a7 4d 1f dd 70 85 38 c5 b4 38 4d  .B..e.M..p.8..8M
+0x7fa0af3c2678: fd fc d3 81 69 c5 65 92 82 85 99 1d 09 4e 6f e0  ....i.e......No.
+0x7fa0af3c2688: 73 8d 74 7f b6 09 3f f6 53 e5 9a 95 ab fc 67 55  s.t...?.S.....gU
+0x7fa0af3c2698: 83 1a fe ff 70 98 c5 fe 3b f1 ac 2e 33 34 5f 6e  ....p...;...34_n
+0x7fa0af3c26a8: 14 72 23 39 91 18 0e 54 bb 18 67 6f 2c fc 68 80  .r#9...T..go,.h.
+0x7fa0af3c26b8: 70 fe 0b 75 67 84 42 a5 74 ed e7 1a 89 6f fe 69  p..ug.B.t....o.i
+0x7fa0af3c26c8: 1a ad fe c5 a6 ba 71 6e 1b be 68 60 da 2b fd c9  ......qn..h`.+..
+0x7fa0af3c26d8: 48 66 db 13 aa 0f 56 19 ec 43 d9 c7 d9 7b 35 81  Hf....V..C...{5.
+0x7fa0af3c26e8: 7e 23 2e e2 b7 81 fe a1 3b 70 39 1d 53 fd        .#......;p9.S.
+PR_Write() is called with a buffer of 238 bytes
+
+0x7fa0af3c2608: f9 4e 80 5a 70 f9 4d 15 5a d2 d3 16 d3 15 fa 4e  .N.Zp.M.Z......N
+0x7fa0af3c2618: 4b d3 71 f2 49 e7 5a e0 da 52 4b 4e d3 5a d3 72  K.q.I.Z..RKN.Z.r
+0x7fa0af3c2628: d3 d3 cd d3 4d 4d d3 d7 d3 d3 d3 d3 d3 03 5a 4d  ....MM........ZM
+0x7fa0af3c2638: 4e d3 50 d3 d3 15 d3 4d 4e d3 5a d3 4e 4d 5a 70  N.P....MN.Z.NMZp
+0x7fa0af3c2648: d3 4d d3 d3 f2 d3 d4 d3 d3 5a d3 5a 4f 4e 4d 5a  .M.......Z.ZONMZ
+0x7fa0af3c2658: d3 80 52 4f d3 d3 d3 4b d3 d3 5a 80 6e 4e d3 4f  ..RO...K..Z.nN.O
+0x7fa0af3c2668: d3 e7 d3 5a d3 4d 5a e8 5a 80 5a d3 d3 70 d3 4e  ...Z.MZ.Z.Z..p.N
+0x7fa0af3c2678: d3 d3 81 4d d3 d3 4d 4d d3 d3 4d 5a 4f d3 4d d3  ...M..MM..MZO.M.
+0x7fa0af3c2688: 4b d3 5b 4d e7 d3 f9 d4 5a d3 72 d3 4d d3 4d 12  K.[M....Z.r.M.M.
+0x7fa0af3c2698: da f6 d3 8e d3 53 d3 d3 d3 d3 c8 4e 4e e7 5b 72  .....S.....NN.[r
+0x7fa0af3c26a8: 5a 4d d3 d3 4f d3 d3 d2 6c 4e 4d 5b d3 d3 4b f9  ZM..O...lNM[..K.
+0x7fa0af3c26b8: d3 d3 d2 5d d3 4d 4e 4d 4d e0 d2 6e d3 5a d3 5d  ...].MNMM..n.Z.]
+0x7fa0af3c26c8: f6 4d d3 d3 9d 5a 80 d3 6e 4f 4b d3 5a b4 d3 d3  .M...Z..nOK.Z...
+0x7fa0af3c26d8: 4d 5d 5a 9d 2e d2 d3 8f 4f d3 5a d3 5a f2 d3 5a  M]Z.....O.Z.Z..Z
+0x7fa0af3c26e8: 5a fc 4e 4b 63 5a d3 a3 6d d3 4d 45 d3 d3        Z.NKcZ..m.ME..
+PR_Write() is called with a buffer of 238 bytes
+
+0x7fa0af3c2608: 68 3f c7 fe 4e 34 16 65 17 10 f6 35 ae 1c b2 84  h?..N4.e...5....
+0x7fa0af3c2618: 4e 8a 60 97 fb dd ea a6 89 f0 06 0a d3 3c 86 18  N.`..........<..
+0x7fa0af3c2628: 8c 08 45 de ba b7 be c7 91 d2 7d ee 03 32 5e 7d  ..E.......}..2^}
+0x7fa0af3c2638: b7 56 6b 97 aa 7f 11 b5 7c ef d7 a6 62 fa 72 58  .Vk.....|...b.rX
+0x7fa0af3c2648: 4d 61 82 48 f9 d5 59 81 79 1e 11 a8 40 0e 2f 41  Ma.H..Y.y...@./A
+0x7fa0af3c2658: 2b ef c1 11 25 62 37 81 de e5 62 30 40 b4 28 1d  +...%b7...b0@.(.
+0x7fa0af3c2668: 40 8d f5 d8 d2 5b fa 31 90 78 c4 57 f4 6c 55 4c  @....[.1.x.W.lUL
+0x7fa0af3c2678: c1 5c 7c ab 32 72 91 d7 b7 d6 03 62 22 d2 d2 16  .\|.2r.....b"...
+0x7fa0af3c2688: d4 2f ca ee 8f c9 96 ea ee c2 40 a2 30 19 78 7f  ./........@.0.x.
+0x7fa0af3c2698: b6 f2 b6 cf 69 37 09 e3 6b 8a f0 4e e2 c2 e4 65  ....i7..k..N...e
+0x7fa0af3c26a8: e1 65 c7 66 f4 8f 0c fc c2 41 9f dc 96 0d 30 44  .e.f.....A....0D
+0x7fa0af3c26b8: 62 c5 41 56 6d 37 6e e7 fd 5e 70 d9 20 27 ff d6  b.AVm7n..^p..'..
+0x7fa0af3c26c8: f3 28 48 36 e0 80 78 ea d5 43 fe 05 eb 04 67 68  .(H6..x..C....gh
+0x7fa0af3c26d8: 22 e2 78 4f c8 ea 12 c0 b6 1c 5f f4 12 f5 ab f2  ".xO......_.....
+0x7fa0af3c26e8: ab d7 d8 d3 01 4e 52 b3 bf e1 9e cd 6a 2f        .....NR.....j/
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~Ä[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":21,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":107,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdk","clocks":[2509,2766],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]†
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 9b ba 8f b8 c0 c1 ad db f3 db e1 d6  ................
+0x7fa0b1e6c330: fe d6 ad 82 b9 95 fc dd e9 cc e6 db fe 95 fa cb  ................
+0x7fa0b1e6c340: fe c8 ad 94 b9 de ee cc fa 98 b5 c3 b9 d7 e0 ce  ................
+0x7fa0b1e6c350: fe 98 b5 c3 b9 dd e6 dc b9 80 b8 88 ad 88 bf 80  ................
+0x7fa0b1e6c360: a2 8f b7 94 b9 c9 ea c9 b9 80 bd 89 b7 98 fa d1  ................
+0x7fa0b1e6c370: ff 98 b5 9a e9 d5 ec db f3 df e1 9a b7 98 e2 d7  ................
+0x7fa0b1e6c380: ed df ad 82 b9 fe f9 9a b7 98 ec d4 f4 d9 e4 9a  ................
+0x7fa0b1e6c390: a1 88 b8 88 aa 96 ad db f7 d5 ec d3 f6 c9 ad 82  ................
+0x7fa0b1e6c3a0: a9 8d bf 89 af 83 a3 9a e8 cb fa d9 e9 df eb 9a  ................
+0x7fa0b1e6c3b0: a1 dc ee d4 e8 df f2 94 b9 c9 e6 dc b9 80 ad df  ................
+0x7fa0b1e6c3c0: e8 df fd ce b9 96 ad cc f2 de ad 82 b9 f7 e0 ce  ................
+0x7fa0b1e6c3d0: fe 98 f2 94 b9 d3 eb 9a a1 98 b7 81 b9 96 ad db  ................
+0x7fa0b1e6c3e0: f7 d3 ea d6 ef f3 eb 9a a1 98 bb 8c ed ce bc d0  ................
+0x7fa0b1e6c3f0: fd 89 ff c8 f1 cd e5 dd ad df fa d4 a2 8c ba cb  ................
+0x7fa0b1e6c400: f6 82 e0 c2 ae d4 bf 9a e6 e7                    ..........
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~Ç[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":22,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":107,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":157,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDv","clocks":[2509,2701],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~Ñ[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":23,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":106,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":167,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmv","clocks":[2486,2701],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 82 91 6a 44 d9 ea 48 27 ea f0 04 2a  ......jD..H'...*
+0x7fa0b1e6c330: e7 fd 48 7e a0 be 19 21 f0 e7 03 27 e7 be 1f 37  ..H....!...'...7
+0x7fa0b1e6c340: e7 e3 48 68 a0 f5 0b 30 e3 b3 50 3f a0 fc 05 32  ..Hh...0..P?...2
+0x7fa0b1e6c350: e7 b3 50 3f a0 f6 03 20 a0 ab 5d 74 b4 a3 5a 7c  ..P?......]t..Z|
+0x7fa0b1e6c360: bb a4 52 68 a0 e2 0f 35 a0 ab 58 77 ae b3 1f 2d  ..Rh...5..Xw...-
+0x7fa0b1e6c370: e6 b3 50 66 f0 fe 09 27 ea f4 04 66 ae b3 07 2b  ..Pf...'...f...+
+0x7fa0b1e6c380: f4 f4 48 7e a0 d2 1c 66 ae b3 09 28 ed f2 01 66  ..H....f...(...f
+0x7fa0b1e6c390: b8 a3 5c 7c ba bd 48 27 ee fe 09 2f ef e2 48 7e  ..\|..H'.../..H.
+0x7fa0b1e6c3a0: b0 a7 52 7c ba a1 46 66 f1 e0 1f 25 f0 f4 0e 66  ..R|..Ff...%...f
+0x7fa0b1e6c3b0: b8 f7 0b 28 f1 f4 17 68 a0 e2 03 20 a0 ab 48 23  ...(...h......H#
+0x7fa0b1e6c3c0: f1 f4 18 32 a0 bd 48 30 eb f5 48 7e a0 dc 05 32  ...2..H0..H....2
+0x7fa0b1e6c3d0: e7 b3 17 68 a0 f8 0e 66 b8 b3 53 76 a0 bd 48 27  ...h...f..Sv..H'
+0x7fa0b1e6c3e0: ee f8 0f 2a f6 d8 0e 66 b8 b3 5e 70 f4 e5 59 2c  ...*...f..^p..Y,
+0x7fa0b1e6c3f0: e4 a2 1a 34 e8 e6 00 21 b4 f4 1f 28 bb a7 5f 37  ...4...!...(.._7
+0x7fa0b1e6c400: ef a9 05 3e b7 ff 5a 66 ff cc                    ...>..Zf..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~Ü[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":24,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":106,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":169,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCv","clocks":[2486,2688],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~à[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":25,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":107,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":158,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox","clocks":[2471,2688],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]†
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 6d 46 37 e4 36 3d 15 87 05 27 59 8a  ....mF7.6=...'Y.
+0x7fa0b1e6c330: 08 2a 15 de 4f 69 44 81 1f 30 5e 87 08 69 42 97  .*..OiD..0^..iB.
+0x7fa0b1e6c340: 08 34 15 c8 4f 22 56 90 0c 64 0d 9f 4f 2b 58 92  .4..O"V..d..O+X.
+0x7fa0b1e6c350: 08 64 0d 9f 4f 21 5e 80 4f 7c 00 d4 5b 74 07 dc  .d..O!^.O|..[t..
+0x7fa0b1e6c360: 54 73 0f c8 4f 35 52 95 4f 7c 05 d1 41 64 42 8d  Ts..O5R.O|..AdB.
+0x7fa0b1e6c370: 09 64 0d c6 1f 29 54 87 05 23 59 c6 41 64 5a 8b  .d...)T..#Y.AdZ.
+0x7fa0b1e6c380: 1b 23 15 de 4f 7e 01 c6 41 64 54 88 02 25 5c c6  .#..O...AdT..%\.
+0x7fa0b1e6c390: 57 74 01 d3 5f 6a 15 87 01 29 54 8f 00 35 15 de  Wt.._j...)T..5..
+0x7fa0b1e6c3a0: 5f 70 00 d6 5b 72 1b c6 1e 37 42 85 1f 23 53 c6  _p..[r...7B..#S.
+0x7fa0b1e6c3b0: 57 20 56 88 1e 23 4a c8 4f 35 5e 80 4f 7c 15 83  W.V..#J.O5^.O|..
+0x7fa0b1e6c3c0: 1e 23 45 92 4f 6a 15 90 04 22 15 de 4f 0b 58 92  .#E.Oj..."..O.X.
+0x7fa0b1e6c3d0: 08 64 4a c8 4f 2f 53 c6 57 64 0e d1 4f 6a 15 87  .dJ.O/S.Wd..Oj..
+0x7fa0b1e6c3e0: 01 2f 52 8a 19 0f 53 c6 57 64 03 d0 1b 32 04 8c  ./R...S.Wd...2..
+0x7fa0b1e6c3f0: 0b 75 47 94 07 31 5d 81 5b 23 42 88 54 70 02 97  .uG..1].[#B.Tp..
+0x7fa0b1e6c400: 00 7e 58 9e 58 28 07 c6 10 1b                    ..X.X(....
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å9[{"id":"95","successful":true,"channel":"/service/user"}]Å~ä[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":26,"players":[{"uid":"zici","status":"playing","lag":1,"lagms":106,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":161,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86","clocks":[2471,2672],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ˆL¬†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ã[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":27,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":99,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":158,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI","clocks":[2435,2672],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 234 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e2 65 11 ca 19 3e 6a e8 7a 0d 70 a4 77  ....e...>j.z.p.w
+0x7fa0b1e6c330: 00 7d e8 23 47 3e b9 7c 17 67 a3 7a 00 3e bf 6a  .}.#G>.|.g.z.>.j
+0x7fa0b1e6c340: 00 63 e8 35 47 75 ab 6d 04 33 f0 62 47 7c a5 6f  .c.5Gu.m.3.bG|.o
+0x7fa0b1e6c350: 00 33 f0 62 47 76 a3 7d 47 2b fd 29 53 23 fa 21  .3.bGv.}G+.)S#.!
+0x7fa0b1e6c360: 5c 24 f2 35 47 62 af 68 47 2b f8 2e 49 33 bf 70  \$.5Gb.hG+..I3.p
+0x7fa0b1e6c370: 01 33 f0 3b 17 7e a9 7a 0d 74 a4 3b 49 33 a7 76  .3.;...z.t.;I3.v
+0x7fa0b1e6c380: 13 74 e8 23 47 27 ff 3b 49 33 a9 75 0a 72 a1 3b  .t.#G'.;I3.u.r.;
+0x7fa0b1e6c390: 5f 23 fc 2d 51 3d e8 7a 09 7e a9 72 08 62 e8 23  _#.-Q=.z...r.b.#
+0x7fa0b1e6c3a0: 57 27 fe 2d 5d 21 e6 3b 16 60 bf 78 17 74 ae 3b  W'.-]!.;.`.x.t.;
+0x7fa0b1e6c3b0: 5f 77 ab 75 16 74 b7 35 47 62 a3 7d 47 2b e8 7e  _w.u.t.5Gb.}G+..
+0x7fa0b1e6c3c0: 16 74 b8 6f 47 3d e8 6d 0c 75 e8 23 47 5c a5 6f  .t.oG=.m.u.#G\.o
+0x7fa0b1e6c3d0: 00 33 b7 35 47 78 ae 3b 5f 33 f3 21 47 3d e8 7a  .3.5Gx.;_3.!G=.z
+0x7fa0b1e6c3e0: 09 78 af 77 11 58 ae 3b 5f 33 fe 2d 13 65 f9 71  .x.w.X.;_3.-.e.q
+0x7fa0b1e6c3f0: 03 22 ba 69 0f 66 a0 7c 53 74 bf 75 5c 27 ff 6a  .".i.f.|St.u\'.j
+0x7fa0b1e6c400: 08 29 a5 63 50 7f fa 3b 18 4c                    .).cP..;.L
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ç[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":28,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":97,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":157,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65","clocks":[2435,2644],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~è[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":29,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":97,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":153,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ","clocks":[2403,2644],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 f4 a7 12 90 af dc 30 f3 9c c6 7c fe  ..........0...|.
+0x7fa0b1e6c330: 91 cb 30 aa d6 88 61 f5 86 d1 7b f3 91 88 67 e3  ..0...a...{...g.
+0x7fa0b1e6c340: 91 d5 30 bc d6 c3 73 e4 95 85 28 eb d6 ca 7d e6  ..0...s...(...}.
+0x7fa0b1e6c350: 91 85 28 eb d6 c0 7b f4 d6 9d 25 a0 c2 95 22 a8  ..(...{...%...".
+0x7fa0b1e6c360: cd 92 2a bc d6 d4 77 e1 d6 9d 20 a9 d8 85 67 f9  ..*...w.......g.
+0x7fa0b1e6c370: 90 85 28 b2 86 c8 71 f3 9c c2 7c b2 d8 85 7f ff  ..(...q...|.....
+0x7fa0b1e6c380: 82 c2 30 aa d6 90 48 b2 d8 85 71 fc 9b c4 79 b2  ..0...H...q...y.
+0x7fa0b1e6c390: ce 95 24 a3 cc 8b 30 f3 98 c8 71 fb 99 d4 30 aa  ..$...0...q...0.
+0x7fa0b1e6c3a0: c6 91 21 a8 c0 97 3e b2 87 d6 67 f1 86 c2 76 b2  ..!...>...g...v.
+0x7fa0b1e6c3b0: ce c1 73 fc 87 c2 6f bc d6 d4 7b f4 d6 9d 30 f7  ..s...o...{...0.
+0x7fa0b1e6c3c0: 87 c2 60 e6 d6 8b 30 e4 9d c3 30 aa d6 ea 7d e6  ..`...0...0...}.
+0x7fa0b1e6c3d0: 91 85 6f bc d6 ce 76 b2 ce 85 23 a0 c5 85 3e b2  ..o...v...#...>.
+0x7fa0b1e6c3e0: 97 cb 7b f5 9a d3 5b f4 d6 9d 30 a4 c0 d1 66 a3  ..{...[...0...f.
+0x7fa0b1e6c3f0: 9c c1 21 e0 84 cd 65 fa 91 91 77 e5 98 9e 24 a5  ..!...e...w...$.
+0x7fa0b1e6c400: 87 ca 2a ff 8e 92 7c a0 d6 da 4f                 ..*...|...O
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ë[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":30,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":97,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":154,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7Z","clocks":[2403,2638],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ì[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":31,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":97,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":133,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZ","clocks":[2383,2638],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"102","successful":true,"channel":"/meta/connect","ext":{"ack":52}}]
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 e4 2d 1f d1 bf 56 3d b2 8c 4c 71 bf  .....-...V=..Lq.
+0x7fa0b1e6c330: 81 41 3d eb c6 02 6c b4 96 5b 76 b2 81 02 6a a2  .A=...l..[v...j.
+0x7fa0b1e6c340: 81 5f 3d fd c6 49 7e a5 85 0f 25 aa c6 40 70 a7  ._=..I....%..@p.
+0x7fa0b1e6c350: 81 0f 25 aa c6 4a 76 b5 c6 17 28 e1 d2 1f 2f e9  ..%..Jv...(.../.
+0x7fa0b1e6c360: dd 18 27 fd c6 5e 7a a0 c6 17 2c e0 c8 0f 6a b8  ..'..^z...,...j.
+0x7fa0b1e6c370: 80 0f 25 f3 96 42 7c b2 8c 48 71 f3 c8 0f 72 be  ..%..B|..Hq...r.
+0x7fa0b1e6c380: 92 48 3d eb c6 7f 45 f3 c8 0f 7c bd 8b 4e 74 f3  .H=...E...|..Nt.
+0x7fa0b1e6c390: de 1f 29 e2 d3 01 3d b2 88 42 7c ba 89 5e 3d eb  ..)...=..B|..^=.
+0x7fa0b1e6c3a0: d6 1b 2c e6 d4 19 33 f3 97 5c 6a b0 96 48 7b f3  ..,...3..\j..H{.
+0x7fa0b1e6c3b0: de 4b 7e bd 97 48 62 fd c6 5e 76 b5 c6 17 3d b6  .K...Hb..^v...=.
+0x7fa0b1e6c3c0: 97 48 6d a7 c6 01 3d a5 8d 49 3d eb c6 60 70 a7  .Hm...=..I=..`p.
+0x7fa0b1e6c3d0: 81 0f 62 fd c6 44 7b f3 de 0f 2e e1 d0 0f 33 f3  ..b..D{.......3.
+0x7fa0b1e6c3e0: 87 41 76 b4 8a 59 56 b5 c6 17 3d e5 d0 5b 6b e2  .Av..YV...=..[k.
+0x7fa0b1e6c3f0: 8c 4b 2c a1 94 47 68 bb 81 1b 7a a4 88 14 29 e4  .K,..Gh...z...).
+0x7fa0b1e6c400: 97 40 27 be 9e 18 71 e1 c6 50 42                 .@'...q..PB
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å:[{"id":"104","successful":true,"channel":"/service/user"}]Å~ï[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":32,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":97,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":133,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZ","clocks":[2383,2637],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"103","successful":true,"channel":"/meta/connect","ext":{"ack":53}}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ó[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":33,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":133,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcD","clocks":[2343,2637],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"105","successful":true,"channel":"/meta/connect","ext":{"ack":54}}]ˇˇˇˇˇˇˇˇ`Áo‡†
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 39 e6 b1 a9 62 9d 93 ca 51 87 df c7  ....9...b...Q...
+0x7fa0b1e6c330: 5c 8a 93 93 1b c9 c2 cc 4b 90 d8 ca 5c c9 c4 da  \.......K...\...
+0x7fa0b1e6c340: 5c 94 93 85 1b 82 d0 dd 58 c4 8b d2 1b 8b de df  \.......X.......
+0x7fa0b1e6c350: 5c c4 8b d2 1b 81 d8 cd 1b dc 86 99 0f d4 81 91  \...............
+0x7fa0b1e6c360: 00 d3 89 85 1b 95 d4 d8 1b dc 82 9a 15 c4 c4 c0  ................
+0x7fa0b1e6c370: 5d c4 8b 8b 4b 89 d2 ca 51 83 df 8b 15 c4 dc c6  ]...K...Q.......
+0x7fa0b1e6c380: 4f 83 93 93 1b bc e2 8b 15 c4 d2 c5 56 85 da 8b  O...........V...
+0x7fa0b1e6c390: 03 d4 87 9b 0c ca 93 ca 55 89 d2 c2 54 95 93 93  ........U...T...
+0x7fa0b1e6c3a0: 0b d0 83 9c 01 d6 9d 8b 4a 97 c4 c8 4b 83 d5 8b  ........J...K...
+0x7fa0b1e6c3b0: 03 80 d0 c5 4a 83 cc 85 1b 95 d8 cd 1b dc 93 ce  ....J...........
+0x7fa0b1e6c3c0: 4a 83 c3 df 1b ca 93 dd 50 82 93 93 1b ab de df  J.......P.......
+0x7fa0b1e6c3d0: 5c c4 cc 85 1b 8f d5 8b 03 c4 80 99 0e c4 9d 8b  \...............
+0x7fa0b1e6c3e0: 5a 8a d8 cc 57 92 f8 cd 1b dc 93 9d 0d 90 c5 9a  Z...W...........
+0x7fa0b1e6c3f0: 51 80 82 d9 49 8c c6 c3 5c d0 d4 dc 55 df 87 9c  Q...I...\...U...
+0x7fa0b1e6c400: 4a 8b 89 c6 43 d3 df 99 1b 9b ec                 J...C......
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ô[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":34,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":133,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZS","clocks":[2343,2625],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~õ[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":35,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":133,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu","clocks":[2298,2625],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 b7 f0 bc da ec 8b 9e b9 df 91 d2 b4  ................
+0x7fa0b1e6c330: d2 9c 9e e0 95 df cf bf c5 86 d5 b9 d2 df c9 a9  ................
+0x7fa0b1e6c340: d2 82 9e f6 95 94 dd ae d6 d2 86 a1 95 9d d3 ac  ................
+0x7fa0b1e6c350: d2 d2 86 a1 95 97 d5 be 95 ca 8b ea 81 c2 8c e2  ................
+0x7fa0b1e6c360: 8e c5 84 f6 95 83 d9 ab 95 ca 8f ef 9b d2 c9 b3  ................
+0x7fa0b1e6c370: d3 d2 86 f8 c5 9f df b9 df 95 d2 f8 9b d2 d1 b5  ................
+0x7fa0b1e6c380: c1 95 9e e0 95 c3 ea f8 9b d2 df b6 d8 93 d7 f8  ................
+0x7fa0b1e6c390: 8d c2 8a ea 82 dc 9e b9 db 9f df b1 da 83 9e e0  ................
+0x7fa0b1e6c3a0: 85 c6 8c ef 81 c0 90 f8 c4 81 c9 bb c5 95 d8 f8  ................
+0x7fa0b1e6c3b0: 8d 96 dd b6 c4 95 c1 f6 95 83 d5 be 95 ca 9e bd  ................
+0x7fa0b1e6c3c0: c4 95 ce ac 95 dc 9e ae de 94 9e e0 95 bd d3 ac  ................
+0x7fa0b1e6c3d0: d2 d2 c1 f6 95 99 d8 f8 8d d2 8d eb 87 d2 90 f8  ................
+0x7fa0b1e6c3e0: d4 9c d5 bf d9 84 f5 be 95 ca 9e ee 83 86 c8 e9  ................
+0x7fa0b1e6c3f0: df 96 8f aa c7 9a cb b0 d2 c6 d9 af db c9 8a ef  ................
+0x7fa0b1e6c400: c4 9d 84 b5 cd c5 d2 ea 95 8d e1                 ...........
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å:[{"id":"110","successful":true,"channel":"/service/user"}]Å~ù[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":36,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":139,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3V","clocks":[2298,2605],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"109","successful":true,"channel":"/meta/connect","ext":{"ack":57}}]L¬†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ü[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":37,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":139,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV","clocks":[2244,2605],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 89 d2 d5 d5 d2 a9 f7 b6 e1 b3 bb bb  ................
+0x7fa0b1e6c330: ec be f7 ef ab fd a6 b0 fb a4 bc b6 ec fd a0 a6  ................
+0x7fa0b1e6c340: ec a0 f7 f9 ab b6 b4 a1 e8 f0 ef ae ab bf ba a3  ................
+0x7fa0b1e6c350: ec f0 ef ae ab b5 bc b1 ab e8 e2 e5 bf e0 e5 ed  ................
+0x7fa0b1e6c360: b0 e7 ed f9 ab a1 b0 a4 ab e8 e6 e2 a5 f0 a0 bc  ................
+0x7fa0b1e6c370: ed f0 ef f7 fb bd b6 b6 e1 b7 bb f7 a5 f0 b8 ba  ................
+0x7fa0b1e6c380: ff b7 f7 ef ab f3 83 f7 a5 f0 b6 b9 e6 b1 be f7  ................
+0x7fa0b1e6c390: b3 e0 e0 e2 b1 fe f7 b6 e5 bd b6 be e4 a1 f7 ef  ................
+0x7fa0b1e6c3a0: bb e7 e2 ed bf e3 f9 f7 fa a3 a0 b4 fb b7 b1 f7  ................
+0x7fa0b1e6c3b0: b3 b4 b4 b9 fa b7 a8 f9 ab a1 bc b1 ab e8 f7 b2  ................
+0x7fa0b1e6c3c0: fa b7 a7 a3 ab fe f7 a1 e0 b6 f7 ef ab 9f ba a3  ................
+0x7fa0b1e6c3d0: ec f0 a8 f9 ab bb b1 f7 b3 f0 e4 e4 ba f0 f9 f7  ................
+0x7fa0b1e6c3e0: ea be bc b0 e7 a6 9c b1 ab e8 f7 e1 bd a4 a1 e6  ................
+0x7fa0b1e6c3f0: e1 b4 e6 a5 f9 b8 a2 bf ec e4 b0 a0 e5 eb e3 e0  ................
+0x7fa0b1e6c400: fa bf ed ba f3 e7 bb e5 ab af 88                 ...........
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~°[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":38,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":131,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!V","clocks":[2244,2578],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~£[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":39,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":131,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!Vbl","clocks":[2148,2578],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 6b 65 f5 8c 30 1e d7 ef 03 04 9b e2  ....ke..0.......
+0x7fa0b1e6c330: 0e 09 d7 b6 49 4a 86 e9 19 13 9c ef 0e 4a 80 ff  ....IJ.......J..
+0x7fa0b1e6c340: 0e 17 d7 a0 49 01 94 f8 0a 47 cf f7 49 08 9a fa  ....I....G..I...
+0x7fa0b1e6c350: 0e 47 cf f7 49 02 9c e8 49 5f c2 bc 5d 57 c5 b4  .G..I...I_..]W..
+0x7fa0b1e6c360: 52 50 cd a0 49 16 90 fd 49 5f c6 b5 47 47 80 e5  RP..I...I_..GG..
+0x7fa0b1e6c370: 0f 47 cf ae 19 0a 96 ef 03 00 9b ae 47 47 98 e3  .G..........GG..
+0x7fa0b1e6c380: 1d 00 d7 b6 49 2b a0 ae 47 47 96 e0 04 06 9e ae  ....I+..GG......
+0x7fa0b1e6c390: 51 57 c0 bb 5b 49 d7 ef 07 0a 96 e7 06 16 d7 b6  QW..[I..........
+0x7fa0b1e6c3a0: 59 50 c2 bc 5f 52 d9 ae 18 14 80 ed 19 00 91 ae  YP.._R..........
+0x7fa0b1e6c3b0: 51 03 94 e0 18 00 88 a0 49 16 9c e8 49 5f d7 eb  Q.......I...I_..
+0x7fa0b1e6c3c0: 18 00 87 fa 49 49 d7 f8 02 01 d7 b6 49 28 9a fa  ....II......I(..
+0x7fa0b1e6c3d0: 0e 47 88 a0 49 0c 91 ae 51 47 c4 bd 5c 47 d9 ae  .G..I...QG..\G..
+0x7fa0b1e6c3e0: 08 09 9c e9 05 11 bc e8 49 5f d7 b8 5f 13 81 bf  ........I_.._...
+0x7fa0b1e6c3f0: 03 03 c6 fc 1b 0f 82 e6 0e 53 90 f9 07 5c c3 b9  .........S...\..
+0x7fa0b1e6c400: 18 08 cd e3 11 50 9b bc 49 18 a8                 .....P..I..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~•[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":40,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNU","clocks":[2148,2570],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]âM¬†
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ß[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":41,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkr","clocks":[2102,2570],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"118","successful":true,"channel":"/meta/connect","ext":{"ack":63}}]äY:Ú†
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 d5 d0 28 f6 8e ab 0a 95 bd b1 46 98  ......(.......F.
+0x7fa0b1e6c330: b0 bc 0a cc f7 ff 5b 93 a7 a6 41 95 b0 ff 5d 85  ......[...A...].
+0x7fa0b1e6c340: b0 a2 0a da f7 b4 49 82 b4 f2 12 8d f7 bd 47 80  ......I.......G.
+0x7fa0b1e6c350: b0 f2 12 8d f7 b7 41 92 f7 ea 1f c6 e3 e2 18 ce  ......A.........
+0x7fa0b1e6c360: ec e5 10 da f7 a3 4d 87 f7 ea 1c c7 f9 f2 5d 9f  ......M.......].
+0x7fa0b1e6c370: b1 f2 12 d4 a7 bf 4b 95 bd b5 46 d4 f9 f2 45 99  ......K...F...E.
+0x7fa0b1e6c380: a3 b5 0a cc f7 86 6d d4 f9 f2 4b 9a ba b3 43 d4  ......m...K...C.
+0x7fa0b1e6c390: ef e2 1d c3 e0 fc 0a 95 b9 bf 4b 9d b8 a3 0a cc  ..........K.....
+0x7fa0b1e6c3a0: e7 e5 1d c3 ed e5 04 d4 a6 a1 5d 97 a7 b5 4c d4  ..........]...L.
+0x7fa0b1e6c3b0: ef b6 49 9a a6 b5 55 da f7 a3 41 92 f7 ea 0a 91  ..I...U...A.....
+0x7fa0b1e6c3c0: a6 b5 5a 80 f7 fc 0a 82 bc b4 0a cc f7 9d 47 80  ..Z...........G.
+0x7fa0b1e6c3d0: b0 f2 55 da f7 b9 4c d4 ef f2 19 c4 e5 f2 04 d4  ..U...L.........
+0x7fa0b1e6c3e0: b6 bc 41 93 bb a4 61 92 f7 ea 0a c2 e1 a6 5c c5  ..A...a.......\.
+0x7fa0b1e6c3f0: bd b6 1b 86 a5 ba 5f 9c b0 e6 4d 83 b9 e9 1e c3  ......_...M.....
+0x7fa0b1e6c400: a6 bd 10 99 af e5 46 c6 f7 ad 75                 ......F...u
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å:[{"id":"120","successful":true,"channel":"/service/user"}]Å~©[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":42,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVE","clocks":[2102,2555],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"119","successful":true,"channel":"/meta/connect","ext":{"ack":64}}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~´[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":43,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":136,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEec","clocks":[2078,2555],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 ab 8c d3 a4 f0 f7 f1 c7 c3 ed bd ca  ................
+0x7fa0b1e6c330: ce e0 f1 9e 89 a3 a0 c1 d9 fa ba c7 ce a3 a6 d7  ................
+0x7fa0b1e6c340: ce fe f1 88 89 e8 b2 d0 ca ae e9 df 89 e1 bc d2  ................
+0x7fa0b1e6c350: ce ae e9 df 89 eb ba c0 89 b6 e4 94 9d be e3 9c  ................
+0x7fa0b1e6c360: 92 b9 eb 88 89 ff b6 d5 89 b6 e7 97 87 ae a6 cd  ................
+0x7fa0b1e6c370: cf ae e9 86 d9 e3 b0 c7 c3 e9 bd 86 87 ae be cb  ................
+0x7fa0b1e6c380: dd e9 f1 9e 89 c9 a6 86 87 ae b0 c8 c4 ef b8 86  ................
+0x7fa0b1e6c390: 91 be e6 90 9e a0 f1 c7 c7 e3 b0 cf c6 ff f1 9e  ................
+0x7fa0b1e6c3a0: 99 b9 e7 91 93 b5 ff 86 d8 fd a6 c5 d9 e9 b7 86  ................
+0x7fa0b1e6c3b0: 91 ea b2 c8 d8 e9 ae 88 89 ff ba c0 89 b6 f1 c3  ................
+0x7fa0b1e6c3c0: d8 e9 a1 d2 89 a0 f1 d0 c2 e8 f1 9e 89 c1 bc d2  ................
+0x7fa0b1e6c3d0: ce ae ae 88 89 e5 b7 86 91 ae e2 96 98 ae ff 86  ................
+0x7fa0b1e6c3e0: c8 e0 ba c1 c5 f8 9a c0 89 b6 f1 90 9f fa a7 97  ................
+0x7fa0b1e6c3f0: c3 ea e0 d4 db e6 a4 ce ce ba b6 d1 c7 b5 e5 91  ................
+0x7fa0b1e6c400: d8 e1 eb cb d1 b9 bd 94 89 f1 8e                 ...........
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~≠[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":44,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":177,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEu","clocks":[2078,2545],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å_[{"data":{"total":731,"sid":"userv","items":14563,"tid":"PaginationInfo"},"channel":"/user-q"}]Å~Ø[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":45,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":177,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunu","clocks":[2049,2545],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 1b 44 b6 f1 40 3f 94 92 73 25 d8 9f  .....D..@?..s%..
+0x7fa0b1e6c330: 7e 28 94 cb 39 6b c5 94 69 32 df 92 7e 6b c3 82  .(..9k..i2...k..
+0x7fa0b1e6c340: 7e 36 94 dd 39 20 d7 85 7a 66 8c 8a 39 29 d9 87  .6..9...zf..9)..
+0x7fa0b1e6c350: 7e 66 8c 8a 39 23 df 95 39 7e 81 c1 2d 76 86 c9  .f..9#..9...-v..
+0x7fa0b1e6c360: 22 71 8e dd 39 37 d3 80 39 7e 82 c4 37 66 c3 98  "q..97..9...7f..
+0x7fa0b1e6c370: 7f 66 8c d3 69 2b d5 92 73 21 d8 d3 37 66 db 9e  .f..i+..s!..7f..
+0x7fa0b1e6c380: 6d 21 94 cb 39 17 c3 d3 37 66 d5 9d 74 27 dd d3  m!..9...7f..t'..
+0x7fa0b1e6c390: 21 76 83 c2 2b 68 94 92 77 2b d5 9a 76 37 94 cb  !v..+h..w+..v7..
+0x7fa0b1e6c3a0: 29 71 85 c1 2f 76 9a d3 68 35 c3 90 69 21 d2 d3  )q../v..h5..i!..
+0x7fa0b1e6c3b0: 21 22 d7 9d 68 21 cb dd 39 37 df 95 39 7e 94 96  !"..h!..97..9...
+0x7fa0b1e6c3c0: 68 21 c4 87 39 68 94 85 72 20 94 cb 39 09 d9 87  h!..9h..r...9...
+0x7fa0b1e6c3d0: 7e 66 cb dd 39 2d d2 d3 21 66 87 c3 2d 66 9a d3  .f..9-..!f..-f..
+0x7fa0b1e6c3e0: 78 28 df 94 75 30 ff 95 39 7e 94 c5 2f 32 c2 c2  x(..u0..9.../2..
+0x7fa0b1e6c3f0: 73 22 85 81 6b 2e c1 9b 7e 72 d3 84 77 7d 80 c4  s"..k....r..w}..
+0x7fa0b1e6c400: 68 29 8e 9e 61 71 d8 c1 39 39 eb                 h)..aq..99.
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~±[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":46,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":179,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSu","clocks":[2049,2530],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~≥[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":47,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":93,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":181,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSude","clocks":[2021,2530],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 51 17 0d 13 0a 6c 2f 70 39 76 63 7d  ....Q....l/p9vc}
+0x7fa0b1e6c330: 34 7b 2f 29 73 38 7e 76 23 61 64 70 34 38 78 60  4{/)s8.v#adp48x`
+0x7fa0b1e6c340: 34 65 2f 3f 73 73 6c 67 30 35 37 68 73 7a 62 65  4e/?sslg057hszbe
+0x7fa0b1e6c350: 34 35 37 68 73 70 64 77 73 2d 3a 23 67 25 3d 2b  457hspdws-:#g%=+
+0x7fa0b1e6c360: 68 22 35 3f 73 64 68 62 73 2d 39 24 7d 35 78 7a  h"5?sdhbs-9$}5xz
+0x7fa0b1e6c370: 35 35 37 31 23 78 6e 70 39 72 63 31 7d 35 60 7c  5571#xnp9rc1}5`|
+0x7fa0b1e6c380: 27 72 2f 29 73 62 79 31 7d 35 6e 7f 3e 74 66 31  'r/)sby1}5n.>tf1
+0x7fa0b1e6c390: 6b 25 38 22 69 3b 2f 70 3d 78 6e 78 3c 64 2f 29  k%8"i;/p=xnx<d/)
+0x7fa0b1e6c3a0: 63 22 3c 2b 63 27 21 31 22 66 78 72 23 72 69 31  c"<+c'!1"fxr#ri1
+0x7fa0b1e6c3b0: 6b 71 6c 7f 22 72 70 3f 73 64 64 77 73 2d 2f 74  kql."rp?sddws-/t
+0x7fa0b1e6c3c0: 22 72 7f 65 73 3b 2f 67 38 73 2f 29 73 5a 62 65  "r.es;/g8s/)sZbe
+0x7fa0b1e6c3d0: 34 35 70 3f 73 7e 69 31 6b 35 3c 21 68 35 21 31  45p?s.i1k5<!h5!1
+0x7fa0b1e6c3e0: 32 7b 64 76 3f 63 44 77 73 2d 2f 27 65 61 79 20  2{dv?cDws-/'eay.
+0x7fa0b1e6c3f0: 39 71 3e 63 21 7d 7a 79 34 21 68 66 3d 2e 3b 26  9q>c!}zy4!hf=.;&
+0x7fa0b1e6c400: 22 7a 35 7c 2b 22 63 23 73 6a 50                 "z5|+"c#sjP
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~µ[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":48,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":96,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":183,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeut","clocks":[2021,2518],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~∑[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":49,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":89,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":187,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeute0","clocks":[1883,2518],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 66 f5 5f df 3d 8e 7d bc 0e 94 31 b1  ....f._.=.}...1.
+0x7fa0b1e6c330: 03 99 7d e5 44 da 2c ba 14 83 36 bc 03 da 2a ac  ..}.D.,...6...*.
+0x7fa0b1e6c340: 03 87 7d f3 44 91 3e ab 07 d7 65 a4 44 98 30 a9  ..}.D.>...e.D.0.
+0x7fa0b1e6c350: 03 d7 65 a4 44 92 36 bb 44 cf 68 ef 50 c7 6f e7  ..e.D.6.D.h.P.o.
+0x7fa0b1e6c360: 5f c0 67 f3 44 86 3a ae 44 cf 6b e6 4a d7 2a b6  _.g.D.:.D.k.J.*.
+0x7fa0b1e6c370: 02 d7 65 fd 14 9a 3c bc 0e 90 31 fd 4a d7 32 b0  ..e...<...1.J.2.
+0x7fa0b1e6c380: 10 90 7d e5 44 83 31 fd 4a d7 3c b3 09 96 34 fd  ..}.D.1.J.<...4.
+0x7fa0b1e6c390: 5c c7 6a ee 56 d9 7d bc 0a 9a 3c b4 0b 86 7d e5  \.j.V.}...<...}.
+0x7fa0b1e6c3a0: 54 c0 6e ef 54 c7 73 fd 15 84 2a be 14 90 3b fd  T.n.T.s...*...;.
+0x7fa0b1e6c3b0: 5c 93 3e b3 15 90 22 f3 44 86 36 bb 44 cf 7d b8  \.>...".D.6.D.}.
+0x7fa0b1e6c3c0: 15 90 2d a9 44 d9 7d ab 0f 91 7d e5 44 b8 30 a9  ..-.D.}...}.D.0.
+0x7fa0b1e6c3d0: 03 d7 22 f3 44 9c 3b fd 5c d7 6e ec 52 d7 73 fd  ..".D.;.\.n.R.s.
+0x7fa0b1e6c3e0: 05 99 36 ba 08 81 16 bb 44 cf 7d eb 52 83 2b ec  ..6.....D.}.R.+.
+0x7fa0b1e6c3f0: 0e 93 6c af 16 9f 28 b5 03 c3 3a aa 0a cc 69 ea  ..l...(...:...i.
+0x7fa0b1e6c400: 15 98 67 b0 1c c0 31 ef 44 88 02                 ..g...1.D..
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~π[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":50,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":89,"gid":706208958},{"uid":"rocchen","status":"playing","lag":2,"lagms":205,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeute0vn","clocks":[1883,2510],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ª[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":51,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":89,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":171,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeute0vnrd","clocks":[1808,2510],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]ÅK[{"id":"136","successful":true,"channel":"/meta/connect","ext":{"ack":76}}]†
+----------------------------------------
+PR_Write() is called with a buffer of 235 bytes
+
+0x7fa0b1e6c320: 81 fe 00 e3 e0 e9 08 ed bb 92 2a 8e 88 88 66 83  ..........*...f.
+0x7fa0b1e6c330: 85 85 2a d7 c2 c6 7b 88 92 9f 61 8e 85 c6 7d 9e  ..*...{...a...}.
+0x7fa0b1e6c340: 85 9b 2a c1 c2 8d 69 99 81 cb 32 96 c2 84 67 9b  ..*...i...2...g.
+0x7fa0b1e6c350: 85 cb 32 96 c2 8e 61 89 c2 d3 3f dd d6 db 38 d5  ..2...a...?...8.
+0x7fa0b1e6c360: d9 dc 30 c1 c2 9a 6d 9c c2 d3 3d dc cc cb 7d 84  ..0...m...=...}.
+0x7fa0b1e6c370: 84 cb 32 cf 92 86 6b 8e 88 8c 66 cf cc cb 65 82  ..2...k...f...e.
+0x7fa0b1e6c380: 96 8c 2a d7 c2 be 47 cf cc cb 6b 81 8f 8a 63 cf  ..*...G...k...c.
+0x7fa0b1e6c390: da db 3c d9 d8 c5 2a 8e 8c 86 6b 86 8d 9a 2a d7  ..<...*...k...*.
+0x7fa0b1e6c3a0: d2 dd 3c d5 d0 d0 24 cf 93 98 7d 8c 92 8c 6c cf  ..<...$...}...l.
+0x7fa0b1e6c3b0: da 8f 69 81 93 8c 75 c1 c2 9a 61 89 c2 d3 2a 8a  ..i...u...a...*.
+0x7fa0b1e6c3c0: 93 8c 7a 9b c2 c5 2a 99 89 8d 2a d7 c2 a4 67 9b  ..z...*...*...g.
+0x7fa0b1e6c3d0: 85 cb 75 c1 c2 80 6c cf da cb 39 de d9 cb 24 cf  ..u...l...9...$.
+0x7fa0b1e6c3e0: 83 85 61 88 8e 9d 41 89 c2 d3 2a d9 d4 9f 7c de  ..a...A...*...|.
+0x7fa0b1e6c3f0: 88 8f 3b 9d 90 83 7f 87 85 df 6d 98 8c d0 3e d8  ..;.......m...>.
+0x7fa0b1e6c400: 93 84 30 82 9a dc 66 dd c2 94 55                 ..0...f...U
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~Ω[{"data":{"sid":"gserv","game":{"id":706208958,"status":"in_progress","seq":52,"players":[{"uid":"zici","status":"playing","lag":0,"lagms":89,"gid":706208958},{"uid":"rocchen","status":"playing","lag":1,"lagms":172,"gid":706208958}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeute0vnrdWO","clocks":[1808,2448],"draws":[],"squares":[0,0]},"tid":"GameState"},"channel":"/game/706208958"}]Å~
+----------------------------------------
+Function PR_Read() with PID 1934 contains 2048 bytes: 
+
+Å~ﬂ[{"data":{"sid":"vserv","event":{"type":"tournament","id":"T342450","title":"1|0 Lightning","users":[{"uid":"CHESScom","status":"offline","lag":0,"lagms":0,"lightning":1200,"blitz":1200,"standard":1200,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":90,"title":null,"mod":false,"new":true,"country":"US","av":true,"avatar":"//d1lalstwiwz2br.cloudfront.net/images_users/avatars/CHESScom_small.2.png","clientfeatures":{"examineboard":false,"multiplegames":false,"clientname":"Unknown"}}],"status":"in_progress","servertime":"2014.01.22 06:26:43","date":"2014.01.22 06:15:00","timeinc":0,"minrating":1200,"basetime":600,"playerscount":6,"rounds":9,"maxrating":1499},"tid":"EventRemove"},"channel":"/event/~1"}]Å~Ï[{"data":{"sid":"gserv","ratingchanges":[18,-68],"game":{"id":706208958,"status":"finished","seq":52,"players":[{"uid":"zici","status":"online","lag":0,"lagms":89},{"uid":"rocchen","status":"online","lag":1,"lagms":185}],"moves":"oEZJEM7RlB6Efo5Zks0KgvKCvl90lr1LpxENxFLDdkDvmvCvox86rI65IZ7ZxZRZcDZSDu3VMV!VblNUkrVEecEunuSudeute0vnrdWO","clocks":[1785,2448],"draws":[],"squares":[0,0],"results":["win","resigned"],"gameage":0},"tid":"EndGame","ratings":[1291,1562]},"channel":"/service/game"}]Å:[{"id":"141","successful":true,"channel":"/service/user"}]Å~
+----------------------------------------

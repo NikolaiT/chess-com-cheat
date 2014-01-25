@@ -1,0 +1,66 @@
+/* 
+
+Three consecutive moves in the middle of a game look like (Accept header slightly modified (escaped) because it would end the comment):
+
+	POST /cometd/ HTTP/1.1
+	Host: live.chess.com
+	User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:26.0) Gecko/20100101 Firefox/26.0
+	Accept: *\/*
+	Accept-Language: en-US,en;q=0.5
+	Accept-Encoding: gzip, deflate
+	Content-Type: application/json;charset=UTF-8
+	X-Requested-With: XMLHttpRequest
+	Referer: http://live.chess.com/live?v=2013121801
+	Content-Length: 224
+	Cookie: tf_login_id=rocchen; cal=WV4BskU6OeHt2MkASbIFtGS1s1EoaWBrX0Nescwn1EdQVyYx1MWFu6d5gKWYILPC; PHPSESSID=n4on1cdlh7uskfoeakrs7bqvh0; JSESSIONID=v75mc2vxuo3m1thm81wiwktz7; BAYEUX_BROWSER=8e67-1j7ihe8mutdxkhqnroivzs4n
+	Connection: keep-alive
+	Pragma: no-cache
+	Cache-Control: no-cache
+	[{"channel":"/service/user","data":{"move":{"gid":704408346,"seq":4,"uid":"rocchen","move":"kA","clock":523,"clockms":52383,"squared":false},"sid":"gserv","tid":"Move"},"id":"65","clientId":"2r8l31u04s2epk5h5299j60tp600jd"}]
+	HTTP/1.1 200 OK
+	Content-Type: application/json;charset=UTF-8
+	Content-Length: 57
+	----------------------------------------------------------
+	http://live.chess.com/cometd/
+
+	POST /cometd/ HTTP/1.1
+	Host: live.chess.com
+	User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:26.0) Gecko/20100101 Firefox/26.0
+	Accept: *\/*
+	Accept-Language: en-US,en;q=0.5
+	Accept-Encoding: gzip, deflate
+	Content-Type: application/json;charset=UTF-8
+	X-Requested-With: XMLHttpRequest
+	Referer: http://live.chess.com/live?v=2013121801
+	Content-Length: 224
+	Cookie: tf_login_id=rocchen; cal=WV4BskU6OeHt2MkASbIFtGS1s1EoaWBrX0Nescwn1EdQVyYx1MWFu6d5gKWYILPC; PHPSESSID=n4on1cdlh7uskfoeakrs7bqvh0; JSESSIONID=v75mc2vxuo3m1thm81wiwktz7; BAYEUX_BROWSER=8e67-1j7ihe8mutdxkhqnroivzs4n
+	Connection: keep-alive
+	Pragma: no-cache
+	Cache-Control: no-cache
+	[{"channel":"/service/user","data":{"move":{"gid":704408346,"seq":6,"uid":"rocchen","move":"mu","clock":516,"clockms":51600,"squared":false},"sid":"gserv","tid":"Move"},"id":"68","clientId":"2r8l31u04s2epk5h5299j60tp600jd"}]
+	HTTP/1.1 200 OK
+	Content-Type: application/json;charset=UTF-8
+	Content-Length: 57
+	----------------------------------------------------------
+	http://live.chess.com/cometd/
+
+	POST /cometd/ HTTP/1.1
+	Host: live.chess.com
+	User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:26.0) Gecko/20100101 Firefox/26.0
+	Accept: *\/*
+	Accept-Language: en-US,en;q=0.5
+	Accept-Encoding: gzip, deflate
+	Content-Type: application/json;charset=UTF-8
+	X-Requested-With: XMLHttpRequest
+	Referer: http://live.chess.com/live?v=2013121801
+	Content-Length: 224
+	Cookie: tf_login_id=rocchen; cal=WV4BskU6OeHt2MkASbIFtGS1s1EoaWBrX0Nescwn1EdQVyYx1MWFu6d5gKWYILPC; PHPSESSID=n4on1cdlh7uskfoeakrs7bqvh0; JSESSIONID=v75mc2vxuo3m1thm81wiwktz7; BAYEUX_BROWSER=8e67-1j7ihe8mutdxkhqnroivzs4n
+	Connection: keep-alive
+	Pragma: no-cache
+	Cache-Control: no-cache
+	[{"channel":"/service/user","data":{"move":{"gid":704408346,"seq":8,"uid":"rocchen","move":"bs","clock":512,"clockms":51240,"squared":false},"sid":"gserv","tid":"Move"},"id":"71","clientId":"2r8l31u04s2epk5h5299j60tp600jd"}]
+	HTTP/1.1 200 OK
+	Content-Type: application/json;charset=UTF-8
+	Content-Length: 57
+	----------------------------------------------------------	
+*/

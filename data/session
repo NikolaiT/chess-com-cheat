@@ -1,0 +1,159 @@
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":50,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":107,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":162,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTV","clocks":[190,141],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]jpeg","cli
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~l[{"data":{"sid":"vserv","event":{"type":"game","id":"G705284062","title":"FM bugsbunny444 vs. twofoxniel","users":[{"uid":"bugsbunny444","status":"online","lag":0,"lagms":96,"lightning":2350,"blitz":2247,"standard":1200,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":50,"title":"FM","mod":false,"new":false,"country":"FR","av":true,"avatar":"//d1lalstwiwz2br.cloudfront.net/images_users/avatars/bugsbunny444_small.1.jpeg","clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Chrome/32; Windows"}},{"uid":"twofoxniel","status":"online","lag":1,"lagms":146,"lightning":2291,"blitz":2270,"standard":1585,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":50,"title":null,"mod":false,"new":false,"country":"TH","av":true,"avatar":"//d1lalstwiwz2br.cloudfront.net/images_users/avatars/twofoxniel_small.2.jpeg","clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Chrome/32; Windows"}}],"servertime":"2014.01.21 05:02:56","timeinc":0,"basetime":600,"titled":true},"tid":"Event"},"channel":"/event/~1"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":51,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":107,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":162,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1","clocks":[153,141],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":52,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":107,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":194,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1","clocks":[153,115],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~[{"data":{"sid":"aserv","object":{"id":705283669,"gametype":"chess","time":{"basetime":1800,"timeinc":0},"players":[{"uid":"monika84","status":"playing","lag":4,"lagms":404,"gid":705283669,"lightning":2104,"blitz":2077,"standard":1904,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":50,"title":"WFM","mod":false,"new":false,"country":"IE","av":true,"avatar":"//d1lalstwiwz2br.cloudfront.net/images_users/avatars/monika84_small.1.jpeg","clientfeatures":{"examineboard":false,"multiplegames":true,"clientname":"LC4Simple v2013121801; Mozilla/11; Windows"}},{"uid":"Yerann","status":"playing","lag":1,"lagms":103,"gid":705283669,"lightning":1977,"blitz":2226,"standard":1200,"lightning960":1200,"blitz960":1200,"standard960":1200,"bughouse":1200,"ml":10,"title":null,"mod":false,"new":false,"country":"LU","av":false,"clientfeatures":{"examineboard":true,"multiplegames":true,"clientname":"LC4Full v2013121801; Firefox/23; Windows"}}]},"from":null,"tid":"Announce","type":"game"},"channel":"/announce"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":53,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":114,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":194,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1","clocks":[152,115],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":54,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":123,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":224,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1","clocks":[152,109],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�3[{"id":"9","data":{"join":true},"channel":"/chat"}]�3[{"id":"9","data":{"join":true},"channel":"/chat"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":55,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":122,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":218,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1ad","clocks":[143,109],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�][{"data":{"total":649,"sid":"userv","items":12961,"tid":"PaginationInfo"},"channel":"/user"}]�4[{"id":"41","data":{"join":true},"channel":"/chat"}]�_[{"data":{"total":649,"sid":"userv","items":12961,"tid":"PaginationInfo"},"channel":"/user-l"}]�5[{"id":"109","data":{"join":true},"channel":"/chat"}]�4[{"id":"54","data":{"join":true},"channel":"/chat"}]�4[{"id":"61","data":{"join":true},"channel":"/chat"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":56,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":136,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":223,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVS","clocks":[143,95],"draws":[],"squares":[0,4]},"tid":"GameState"},"channel":"/game/705282906"}]��n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":57,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":137,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":218,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSEN","clocks":[133,95],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":58,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":150,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":231,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSU","clocks":[133,72],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":59,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":153,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":229,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv","clocks":[132,72],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":60,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":152,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":221,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!","clocks":[132,62],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]<B�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":61,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":153,"gid":705282906},{"uid":"rocchen","status":"playing","lag":2,"lagms":200,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr","clocks":[119,62],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"166","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":62,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":146,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":190,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?","clocks":[119,45],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":63,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":131,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":176,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rP","clocks":[115,45],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"169","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":64,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":127,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOm","clocks":[115,38],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":65,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":127,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":163,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmde","clocks":[103,38],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":66,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":112,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":150,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemv","clocks":[103,33],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":67,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":111,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":149,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPn","clocks":[89,33],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"175","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":68,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":143,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvC","clocks":[89,19],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":69,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":146,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeC","clocks":[81,19],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�L[{"id":"176","successful":true,"channel":"/meta/connect","ext":{"ack":107}}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"178","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":70,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":146,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUC","clocks":[81,18],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":71,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":146,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpF","clocks":[74,18],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"181","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":72,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":146,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCk","clocks":[74,17],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":73,"players":[{"uid":"vihren","status":"playing","lag":0,"lagms":98,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":146,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk","clocks":[62,17],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�������`�o�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"184","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":74,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89","clocks":[62,10],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]��l�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":75,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl","clocks":[61,10],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]��`�o�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�:[{"id":"187","successful":true,"channel":"/service/user"}]�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":76,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl9!","clocks":[61,4],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":77,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl9!lR","clocks":[54,4],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�o�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�L[{"id":"188","successful":true,"channel":"/meta/connect","ext":{"ack":115}}]":77,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl9!lR","clocks":[54,4],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�o�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":78,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl9!lR3V","clocks":[54,3],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]�n
+----------------------------------------
+jsmn_parse couldn't parse the token. ErrorValue=-2
+Function PR_Read() with PID 2954 contains 2048 bytes: 
+
+�~�[{"data":{"sid":"gserv","game":{"id":705282906,"status":"in_progress","seq":79,"players":[{"uid":"vihren","status":"playing","lag":1,"lagms":100,"gid":705282906},{"uid":"rocchen","status":"playing","lag":1,"lagms":160,"gid":705282906}],"moves":"bs0SmC1TnDZRgv!0lB0UBJYQfA5ZJSZPdm90eg8!fdPysyXHAHQHDLUKvKTKysHzsJ6XJzWGzJXOmN0FNE98cV4WLTFTJT7TdfTVf1W1S1!1adVSENSUNv1!vr!?rPOmdemvPnvCeCUCpFCknk89kl9!lR3VRK","clocks":[53,3],"draws":[],"squares":[0,3]},"tid":"GameState"},"channel":"/game/705282906"}]���'�u4�\�Ln
