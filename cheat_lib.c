@@ -20,7 +20,7 @@
  * 	2. The functions PR_Read() and PR_Write() are hooked.
  * 	3. As soon as a WebSocket request that indicates the beginning of a new live.chess.com game is detected, 
  * 	   libpwh.so initializes the local Stockfish engine with the function int initStockfish() {There should be enough time before the game actually begins}.
- *  	3.1 When a JSON message like the following 
+ *  	3.1 When a JSON message like the following
  * 				�~�[{"data":{"sid":"gserv","game":{"id":706548893,"status":"starting","seq":0,"players":[{"uid":"rocchen","status":"playing","lag":4,"lagms":415,"gid":706548893},{"uid":"workcentre7328","status":"playing","lag":2,"lagms":210,"gid":706548893}],"abortable":[true,true],"moves":"","clocks":[600,600],"draws":[],"repeated":true,"squares":[0,0]},"tid":"GameState"},"channel":"/game/706548893"}]�~
  * 			is intercepted, a game has begun. The needles that indicate such a beginning are thus my UID and the string | "status":"starting" |
  *  4. From now on, every outgoing packet (from PR_Write()), that causes a move, must be updated with a
@@ -30,7 +30,7 @@
  *     obtained in PR_Read() and the function void collectGameState() keeps the move history current.
  *
  * Compile with:
- *	gcc -Wall -shared -ggdb3 -fPIC -ldl -ljsmn -L$PWD/jsmn/ -o libpwh.so lib_pr_write_hook.c jsmn/jsmn.c
+ *	gcc -Wall -shared -ggdb3 -fPIC -ldl -ljsmn -L$PWD/jsmn/ -o libpwh.so cheat_lib.c jsmn/jsmn.c
  * Sniff packets with:
  * 	tcp.port == 80 or tcp.port == 443 and (ip.dst == 67.201.34.165 or ip.dst == 192.168.178.48)
  *	
@@ -359,6 +359,7 @@ void modifyMove(char *buf, size_t length) {
 					// Let's update the message with the engine suggestion
 					memcpy((void *)(payloadPtr+tokens[i+3].start), (const void *)bufEncodedMove, tokens[i+3].end - tokens[i+3].start);
 					// That was all! Magic!
+					free(move);
 				}
 			}
 		}
@@ -685,7 +686,9 @@ void messageDecode(char *msg, uint32_t length, uint32_t mask) {
 
 void printDecodedMessage(char *msg, size_t length) {
 	WebSocketMessageHeader* header = initWS_Header(msg, length);
+#if DEBUG_LEVEL >= 2
 	WS_HEADER_PRINT(header, "Printing in printDecodedMessage()");
+#endif
 	
 	uint32_t mask = getMask(header);
 	size_t offset = getPayloadOffset(header);
