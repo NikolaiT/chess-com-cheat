@@ -15,11 +15,11 @@ PR_Write() and PR_Read() and I have a bad approach to parse the correct ones out
 
 You might want to clone this repository and install gcc and its consortes development tools. You need some kind of Linux (or other UNIX variant) in order
 to use this cheat. Furthermore you need firefox, because this cheat only works in combination with firefox (it specifically hooks low level
-networking functions from firefox).
+networking functions from firefox). In addition, you need to install Stockfish and update the path to the Stockfish binary in the cheat_lib.c source file!
 
 After clonging the repository and when you fulfill all the above requirements, fire up a shell and follow me with the next steps:
 
-Around line 55 in the source code of cheat_lib.com, there is a line `#define PLAYER_UID "SomePlayerName"`. Replace SomePlayerName with your chess.com 
+Around line 55 in the source code of cheat_lib.c, there is a line `#define PLAYER_UID "SomePlayerName"`. Replace SomePlayerName with your chess.com 
 user name and then save the C file again. Next step is to compile the source code into a shared library with the followig command (note that you have
 to be in the exact same directory as the C source file you just edited!):
 

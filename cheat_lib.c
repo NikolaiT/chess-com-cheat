@@ -62,7 +62,7 @@
 #define SH_BLUE 34
 
 // Defines the debug level. 0 = log nothing, 1 = log the bare minimum, 2 = log message headers, important key points and the like.
-#define DEBUG_LEVEL 1
+#define DEBUG_LEVEL 2
 
 typedef int PRInt32;
 typedef struct PRFileDesc PRFileDesc;
