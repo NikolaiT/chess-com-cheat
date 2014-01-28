@@ -559,7 +559,7 @@ void memPrint(const char *start, size_t length, size_t line_length) {
 }
 
 const char * memContains(const char *start, size_t length, const char *needle) {
-	const char *end = start + length;
+	const char *end = start + length - strlen(needle);
 
 	while (start < end) {
 		if (memcmp((const void *)start, (const void *)needle, strlen(needle)) == 0)
